@@ -30,6 +30,8 @@ import {
   threejs,
   aws,
   firebase,
+  shoestore,
+
 } from "../assets";
 
 export const navLinks = [
@@ -229,25 +231,37 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Shoe Store",
+    documentation: {
+      url: "https://github.com/Dtowerssj/shoes-store/blob/master/UML/DiagramasUML.pdf",
+      icon: document},
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Full MERN Stack Web-based platform that allows users to buy shoes, and allows administrators to manage their merchandise.",
     tags: [
       {
+        name: "javascript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+      {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
+        color: "bg-blue-900",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        icon: mongodb,
+        color: "bg-green-900",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "nodejs",
+        icon: nodejs,
+        color: "bg-emerald-900",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: shoestore,
+    source_code_link: "https://github.com/Dtowerssj/shoes-store",
+    live_url: "https://shoes-store-gamma.vercel.app/"
   },
   {
     name: "Job IT",
@@ -265,6 +279,11 @@ const projects = [
       {
         name: "scss",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        icon: tailwind,
+        color: "bg-cyan-800",
       },
     ],
     image: jobit,

@@ -33,6 +33,10 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import document from "./document.png";
+import websiteicon from "./website-icon.png"
+
+import shoestore from "./shoestore.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -73,4 +77,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  shoestore,
+  document,
+  websiteicon
 };

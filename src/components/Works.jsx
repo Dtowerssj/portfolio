@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, document, websiteicon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, technologies } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -16,6 +16,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  documentation,
+  live_url
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -34,14 +36,27 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
+          <div className='absolute inset-0 flex justify-end gap-1 m-3 card-img_hover'>
+
+            {documentation && (<div
+              onClick={() => window.open(documentation.url, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
-                alt='source code'
+                src={document}
+                alt='UML'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>)}
+            
+
+            <div
+              onClick={() => window.open(live_url, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={websiteicon}
+                alt='demo'
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
@@ -65,13 +80,11 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
+          {tags.map((tag, index) => (
+            <div key={tag.name} index={index} className={`flex justify-start items-center w-auto h-auto ${tag.color} rounded-xl`}>
+              <img src={tag.icon} alt="tech" className="w-4 h-4 mx-1" />
+              <span className="text-white mr-2">{tag.name}</span>
+            </div>
           ))}
         </div>
       </Tilt>
