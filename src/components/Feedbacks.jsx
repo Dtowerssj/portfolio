@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants/constants';
+import img from "../assets/paola.jpg"
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
   <motion.div
@@ -25,7 +26,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
           </p>
         </div>
 
-        <img src={image} 
+        <img src={img} 
           alt={`feedback-by-${name}`}
           className="w-10 h-1- rounded-full object-cover"
         />

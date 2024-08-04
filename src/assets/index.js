@@ -32,6 +32,10 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import domi from "./company/domi.png";
+import acp from "./company/acp.png";
+import addin from "./company/addin.png";
+import waku from "./company/waku.png";
 
 import document from "./document.png";
 import websiteicon from "./website-icon.png"
@@ -79,5 +83,9 @@ export {
   tripguide,
   shoestore,
   document,
-  websiteicon
+  websiteicon,
+  domi,
+  acp,
+  addin,
+  waku
 };

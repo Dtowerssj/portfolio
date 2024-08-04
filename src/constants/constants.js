@@ -31,7 +31,9 @@ import {
   aws,
   firebase,
   shoestore,
-
+  domi,
+  acp,
+  addin,waku
 } from "../assets";
 
 export const navLinks = [
@@ -149,55 +151,58 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "FullStack Web Developer",
+    company_name: "Pide un Domi",
+    icon: domi,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "February 2022 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing, developing, and maintaining a web application, both front-end and back-end components. Using MERN stack, and other related technologies.",
+      "Collaborating with product managers, and other developers.",
+      "Writing clean, efficient, and well-documented code in languages such as HTML, CSS, JavaScript. And Frameworks like React.js, NodeJS, Express.",
+      "Developing and maintaining a MongoDB database, including designing schemas, optimizing queries, and ensuring data integrity."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "IT Technician Manager",
+    company_name: "Atlanta Computer Pros",
+    icon: acp,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing, maintaining, and documenting PowerShell scripts for automation tasks.",
+      "Documenting internal IT procedures for troubleshooting, maintenance, and user support, using Hudu. ",
+      "Troubleshooting hardware and software issues for end-users, remotely, using SyncroMSP.",
+      "Installing, configuring, and maintaining desktops, laptops, servers, printers and peripheral devices.",
+      "Assisting with network infrastructure setup and maintenance, including routers, switches, and firewalls.",
+      "Managing and maintaining Active Directory and 365 accounts. ",
+      "Training and mentoring junior IT staff."
+    ],
+  },
+  {
+    title: "FullStack Web Developer",
+    company_name: "Addin Technologies",
+    icon: addin,
+    iconBg: "#FFF",
+    date: "Jan 2023 - April 2023",
+    points: [
+      "Developing and maintaining web applications using React.js, Node.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Mobile Developer",
+    company_name: "Waku Software",
+    icon: waku,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "May 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining mobile applications utilizing React Native, Expo, TypeScript, and incorporated Native Modules (Kotlin).",
+      "Innovative features development, including the implementation of an AI-driven chat using Chat-GPT, a QR code scanner for efficient inventory and billing management of products, and establishing a seamless native connection with a thermal printer through native Android code.",
+      "Proficiently addressed and resolved software bugs to ensure optimal application performance.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products"
     ],
   },
 ];
@@ -205,11 +210,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I was amazed by Diego’s commitment to innovation! His work always truly showcased just how much potential he has. It was truly a pleasure to work with him.",
+    name: "Paola Rodíguez",
+    designation: "University Professor",
+    company: "Universidad Rafael Urdaneta",
+    image: "",
   },
   {
     testimonial:
