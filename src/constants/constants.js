@@ -206,7 +206,7 @@ const experiences = [
     date: "May 2023 - Present",
     points: [
       "Developing and maintaining mobile applications utilizing React Native, Expo, TypeScript, and incorporated Native Modules (Kotlin).",
-      "Innovative features development, including the implementation of an AI-driven chat using Chat-GPT, a QR code scanner for efficient inventory and billing management of products, and establishing a seamless native connection with a thermal printer through native Android code.",
+      "Innovative features development, including the implementation of an AI-driven chat using Chat-GPT, a QR code scanner for efficient inventory and billing management of products, and building the native Android (Kotlin) module that connects the React Native app to thermal printers supplied by the Venezuelan government, which had no public documentation.",
       "Proficiently addressed and resolved software bugs to ensure optimal application performance.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products"
     ],
