@@ -8,14 +8,16 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} 
+      {/* three r155+ uses physical light units: x PI and decay 0 match the old look */}
+      <hemisphereLight intensity={0.15 * Math.PI}
       groundColor='black' />
-      <pointLight intensity={1} />
+      <pointLight intensity={Math.PI} decay={0} />
       <spotLight
-      position={[-20, 50, 10]} 
+      position={[-20, 50, 10]}
       angle={0.12}
       penumbra={1}
-      intensity={1}
+      intensity={Math.PI}
+      decay={0}
       castShadow
       shadow-mapSize={1024}
       />

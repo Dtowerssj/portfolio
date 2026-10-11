@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
