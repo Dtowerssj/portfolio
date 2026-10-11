@@ -458,6 +458,21 @@ const mobileProjects = [
     image: cryptotracker,
     source_code_link: "https://github.com/Dtowerssj/crypto-tracker-app",
   },
+  // RESERVED SLOT (hidden): Waku thermal printer module. Activate it once we know where the
+  // code can live (it may belong to Waku's GitHub account) and what the app is called.
+  // Credit Andre Carvalho's expo-serialport (MIT) if it is based on it. Needs a card image.
+  // {
+  //   name: "Thermal Printer Module",
+  //   description:
+  //     "Native Android module (Kotlin) for a React Native app at Waku Software, built to print on thermal printers supplied by the Venezuelan government that had no public documentation.",
+  //   tags: [
+  //     { name: "kotlin", icon: kotlin, color: "bg-purple-900" },
+  //     { name: "react native", icon: reactjs, color: "bg-blue-900" },
+  //     { name: "android", icon: android, color: "bg-green-900" },
+  //   ],
+  //   image: <card image to create>,
+  //   source_code_link: <repo url to decide>,
+  // },
 ];
 
 const projectCategories = [
