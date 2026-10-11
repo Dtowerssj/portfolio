@@ -36,7 +36,8 @@ import {
   addin,waku,
   carracer,
   gamerec,
-  cryptotracker
+  cryptotracker,
+  zoo
 } from "../assets";
 
 export const navLinks = [
@@ -366,6 +367,28 @@ const otherProjects = [
     ],
     image: gamerec,
     source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
+  },
+  {
+    name: "Zoo Management",
+    documentation: {
+      url: "https://github.com/Dtowerssj/Zoo-Management/blob/master/Diagrama%20de%20clases%20Zoo.png",
+      icon: document},
+    description:
+      "Object-oriented Java application for managing a zoo of vertebrates. An abstract animal class is extended by mammals, birds, fish, amphibians and reptiles, with interfaces for movement, attack and defense, and a Swing menu to pick the animal class. Includes the UML class diagram.",
+    tags: [
+      {
+        name: "java",
+        icon: java,
+        color: "bg-red-900",
+      },
+      {
+        name: "uml",
+        icon: document,
+        color: "bg-purple-900",
+      },
+    ],
+    image: zoo,
+    source_code_link: "https://github.com/Dtowerssj/Zoo-Management",
   },
 ];
 

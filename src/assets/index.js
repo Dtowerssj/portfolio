@@ -47,6 +47,7 @@ import tripguide from "./tripguide.png";
 import carracer from "./carracer.png";
 import gamerec from "./gamerec.png";
 import cryptotracker from "./cryptotracker.png";
+import zoo from "./zoo.png";
 
 export {
   logo,
@@ -87,6 +88,7 @@ export {
   carracer,
   gamerec,
   cryptotracker,
+  zoo,
   shoestore,
   document,
   websiteicon,
