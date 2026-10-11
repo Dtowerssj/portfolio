@@ -45,6 +45,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import carracer from "./carracer.png";
+import gamerec from "./gamerec.png";
 
 export {
   logo,
@@ -83,6 +84,7 @@ export {
   jobit,
   tripguide,
   carracer,
+  gamerec,
   shoestore,
   document,
   websiteicon,

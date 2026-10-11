@@ -34,7 +34,8 @@ import {
   domi,
   acp,
   addin,waku,
-  carracer
+  carracer,
+  gamerec
 } from "../assets";
 
 export const navLinks = [
@@ -342,6 +343,28 @@ const otherProjects = [
     ],
     image: carracer,
     source_code_link: "https://github.com/Dtowerssj/Car-Racer-Web-Game",
+  },
+  {
+    name: "Game Recommender",
+    documentation: {
+      url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
+      icon: document},
+    description:
+      "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
+    tags: [
+      {
+        name: "mongodb",
+        icon: mongodb,
+        color: "bg-green-900",
+      },
+      {
+        name: "algorithms",
+        icon: document,
+        color: "bg-purple-900",
+      },
+    ],
+    image: gamerec,
+    source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
   },
 ];
 
