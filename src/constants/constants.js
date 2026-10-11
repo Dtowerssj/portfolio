@@ -35,7 +35,8 @@ import {
   acp,
   addin,waku,
   carracer,
-  gamerec
+  gamerec,
+  cryptotracker
 } from "../assets";
 
 export const navLinks = [
@@ -368,8 +369,31 @@ const otherProjects = [
   },
 ];
 
+const mobileProjects = [
+  {
+    name: "Crypto Tracker",
+    description:
+      "Mobile app that tracks the top 100 cryptocurrencies by market cap, showing live prices from the CoinGecko API with 24-hour change indicators.",
+    tags: [
+      {
+        name: "react native",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "javascript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+    ],
+    image: cryptotracker,
+    source_code_link: "https://github.com/Dtowerssj/crypto-tracker-app",
+  },
+];
+
 const projectCategories = [
   { title: "Web", projects: webProjects },
+  { title: "Mobile", projects: mobileProjects },
   { title: "Others", projects: otherProjects },
 ];
 

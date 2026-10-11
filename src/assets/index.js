@@ -46,6 +46,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import carracer from "./carracer.png";
 import gamerec from "./gamerec.png";
+import cryptotracker from "./cryptotracker.png";
 
 export {
   logo,
@@ -85,6 +86,7 @@ export {
   tripguide,
   carracer,
   gamerec,
+  cryptotracker,
   shoestore,
   document,
   websiteicon,
