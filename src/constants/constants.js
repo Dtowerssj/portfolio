@@ -39,7 +39,10 @@ import {
   cryptotracker,
   zoo,
   heartfailure,
-  ipcalc
+  ipcalc,
+  mlclone,
+  reeduk,
+  tradingbot
 } from "../assets";
 
 export const navLinks = [
@@ -275,6 +278,30 @@ const webProjects = [
     live_url: "https://shoes-store-gamma.vercel.app/"
   },
   {
+    name: "MercadoLibre Clone",
+    description:
+      "Marketplace inspired by MercadoLibre, built with React, Node.js and MongoDB: product listing and detail pages, user accounts with JWT authentication and a REST API. It started from a static HTML/CSS mockup.",
+    tags: [
+      {
+        name: "react",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "nodejs",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "mongodb",
+        icon: mongodb,
+        color: "bg-green-900",
+      },
+    ],
+    image: mlclone,
+    source_code_link: "https://github.com/Dtowerssj/ML",
+  },
+  {
     name: "Job IT",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -435,6 +462,53 @@ const otherProjects = [
     ],
     image: ipcalc,
     source_code_link: "https://github.com/Dtowerssj/IPv4-IPv6-Calculator",
+  },
+  {
+    name: "Reed UK Job Market Analysis",
+    documentation: {
+      url: "https://github.com/Dtowerssj/reed_uk_data_analyze/blob/main/TechnicalTestTorre.ipynb",
+      icon: document},
+    description:
+      "Data analysis of the Reed UK job board, built for a data science internship technical test: job demand by region, the most popular categories and job titles, annual salaries in London and South East England, and posting trends over time.",
+    tags: [
+      {
+        name: "python",
+        icon: python,
+        color: "bg-sky-800",
+      },
+      {
+        name: "pandas",
+        color: "bg-indigo-900",
+      },
+      {
+        name: "seaborn",
+        color: "bg-teal-900",
+      },
+    ],
+    image: reeduk,
+    source_code_link: "https://github.com/Dtowerssj/reed_uk_data_analyze",
+  },
+  {
+    name: "TradingView to MT5 Bot",
+    description:
+      "Python bot that receives TradingView webhook alerts and executes them on MetaTrader 5: opens BUY and SELL orders with stop loss and take profit, closes positions and moves stops, sizing each trade by a configurable percentage of account risk. Includes a Tkinter control panel.",
+    tags: [
+      {
+        name: "python",
+        icon: python,
+        color: "bg-sky-800",
+      },
+      {
+        name: "flask",
+        color: "bg-gray-700",
+      },
+      {
+        name: "metatrader5",
+        color: "bg-amber-800",
+      },
+    ],
+    image: tradingbot,
+    source_code_link: "https://github.com/Dtowerssj/flask",
   },
 ];
 

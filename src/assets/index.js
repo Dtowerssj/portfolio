@@ -50,6 +50,9 @@ import cryptotracker from "./cryptotracker.png";
 import zoo from "./zoo.png";
 import heartfailure from "./heartfailure.png";
 import ipcalc from "./ipcalc.png";
+import mlclone from "./mlclone.jpg";
+import reeduk from "./reeduk.png";
+import tradingbot from "./tradingbot.png";
 
 export {
   logo,
@@ -93,6 +96,9 @@ export {
   zoo,
   heartfailure,
   ipcalc,
+  mlclone,
+  reeduk,
+  tradingbot,
   shoestore,
   document,
   websiteicon,
