@@ -37,7 +37,8 @@ import {
   carracer,
   gamerec,
   cryptotracker,
-  zoo
+  zoo,
+  heartfailure
 } from "../assets";
 
 export const navLinks = [
@@ -389,6 +390,31 @@ const otherProjects = [
     ],
     image: zoo,
     source_code_link: "https://github.com/Dtowerssj/Zoo-Management",
+  },
+  {
+    name: "Heart Failure Prediction",
+    documentation: {
+      url: "https://github.com/Dtowerssj/heart_failure_prediction/blob/main/HF_prediction.ipynb",
+      icon: document},
+    description:
+      "University thesis in data science: exploratory analysis of a 299-patient heart failure dataset and a comparison of five classifiers (logistic regression, SVM, decision tree, random forest and gradient boosting) to predict patient mortality, reaching up to 91.67% test accuracy.",
+    tags: [
+      {
+        name: "python",
+        icon: python,
+        color: "bg-sky-800",
+      },
+      {
+        name: "scikit-learn",
+        color: "bg-orange-800",
+      },
+      {
+        name: "pandas",
+        color: "bg-indigo-900",
+      },
+    ],
+    image: heartfailure,
+    source_code_link: "https://github.com/Dtowerssj/heart_failure_prediction",
   },
 ];
 

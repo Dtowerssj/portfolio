@@ -82,8 +82,8 @@ const ProjectCard = ({
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag, index) => (
             <div key={tag.name} index={index} className={`flex justify-start items-center w-auto h-auto ${tag.color} rounded-xl`}>
-              <img src={tag.icon} alt="tech" className="w-4 h-4 mx-1" />
-              <span className="text-white mr-2">{tag.name}</span>
+              {tag.icon && <img src={tag.icon} alt="tech" className="w-4 h-4 mx-1" />}
+              <span className={`text-white mr-2 ${tag.icon ? "" : "ml-2"}`}>{tag.name}</span>
             </div>
           ))}
         </div>

@@ -48,6 +48,7 @@ import carracer from "./carracer.png";
 import gamerec from "./gamerec.png";
 import cryptotracker from "./cryptotracker.png";
 import zoo from "./zoo.png";
+import heartfailure from "./heartfailure.png";
 
 export {
   logo,
@@ -89,6 +90,7 @@ export {
   gamerec,
   cryptotracker,
   zoo,
+  heartfailure,
   shoestore,
   document,
   websiteicon,
