@@ -33,7 +33,8 @@ import {
   shoestore,
   domi,
   acp,
-  addin,waku
+  addin,waku,
+  carracer
 } from "../assets";
 
 export const navLinks = [
@@ -234,7 +235,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const webProjects = [
   {
     name: "Shoe Store",
     documentation: {
@@ -317,4 +318,36 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const otherProjects = [
+  {
+    name: "Car Racer",
+    description:
+      "Endless-runner browser game drawn on an HTML canvas. Jump over the pedestrians to score, with sound effects and background music. Built with no frameworks.",
+    tags: [
+      {
+        name: "javascript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+      {
+        name: "html",
+        icon: html,
+        color: "bg-orange-800",
+      },
+      {
+        name: "css",
+        icon: css,
+        color: "bg-blue-800",
+      },
+    ],
+    image: carracer,
+    source_code_link: "https://github.com/Dtowerssj/Car-Racer-Web-Game",
+  },
+];
+
+const projectCategories = [
+  { title: "Web", projects: webProjects },
+  { title: "Others", projects: otherProjects },
+];
+
+export { services, technologies, experiences, testimonials, projectCategories };

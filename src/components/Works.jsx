@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 import { styles } from "../styles";
 import { github, document, websiteicon } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects, technologies } from "../constants/constants";
+import { projectCategories } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -50,7 +50,7 @@ const ProjectCard = ({
             </div>)}
             
 
-            <div
+            {live_url && (<div
               onClick={() => window.open(live_url, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
@@ -59,7 +59,7 @@ const ProjectCard = ({
                 alt='demo'
                 className='w-1/2 h-1/2 object-contain'
               />
-            </div>
+            </div>)}
 
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -113,11 +113,22 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+      {projectCategories.map((category) => (
+        <div key={category.title} className='mt-20'>
+          <h3 className='text-white font-bold sm:text-[32px] text-[26px]'>
+            {category.title}
+          </h3>
+          <div className='mt-8 flex flex-wrap gap-7'>
+            {category.projects.map((project, index) => (
+              <ProjectCard
+                key={`${category.title}-${project.name}`}
+                index={index}
+                {...project}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
     </>
   );
 };
