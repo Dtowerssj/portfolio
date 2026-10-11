@@ -53,6 +53,7 @@ import ipcalc from "./ipcalc.png";
 import mlclone from "./mlclone.jpg";
 import reeduk from "./reeduk.png";
 import tradingbot from "./tradingbot.png";
+import vital from "./vital.jpg";
 
 export {
   logo,
@@ -99,6 +100,7 @@ export {
   mlclone,
   reeduk,
   tradingbot,
+  vital,
   shoestore,
   document,
   websiteicon,
