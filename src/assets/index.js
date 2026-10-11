@@ -49,6 +49,7 @@ import gamerec from "./gamerec.png";
 import cryptotracker from "./cryptotracker.png";
 import zoo from "./zoo.png";
 import heartfailure from "./heartfailure.png";
+import ipcalc from "./ipcalc.png";
 
 export {
   logo,
@@ -91,6 +92,7 @@ export {
   cryptotracker,
   zoo,
   heartfailure,
+  ipcalc,
   shoestore,
   document,
   websiteicon,

@@ -38,7 +38,8 @@ import {
   gamerec,
   cryptotracker,
   zoo,
-  heartfailure
+  heartfailure,
+  ipcalc
 } from "../assets";
 
 export const navLinks = [
@@ -415,6 +416,25 @@ const otherProjects = [
     ],
     image: heartfailure,
     source_code_link: "https://github.com/Dtowerssj/heart_failure_prediction",
+  },
+  {
+    name: "IPv4 Calculator",
+    description:
+      "Java Swing desktop app that analyzes an IPv4 address and mask: class (A-E), public or private, APIPA, multicast and reserved ranges, network, gateway and broadcast addresses, and host range. Each calculation is saved to PostgreSQL and can be browsed in a second window.",
+    tags: [
+      {
+        name: "java",
+        icon: java,
+        color: "bg-red-900",
+      },
+      {
+        name: "postgresql",
+        icon: postgre,
+        color: "bg-blue-900",
+      },
+    ],
+    image: ipcalc,
+    source_code_link: "https://github.com/Dtowerssj/IPv4-IPv6-Calculator",
   },
 ];
 
