@@ -517,12 +517,21 @@ const mobileProjects = [
   {
     name: "Vital",
     description:
-      "Mobile app built with React Native at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
+      "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
     tags: [
       {
         name: "react native",
         icon: reactjs,
         color: "bg-blue-900",
+      },
+      {
+        name: "expo",
+        color: "bg-gray-700",
+      },
+      {
+        name: "typescript",
+        icon: typescript,
+        color: "bg-blue-800",
       },
     ],
     image: vital,
