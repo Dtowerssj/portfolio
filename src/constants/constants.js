@@ -253,6 +253,7 @@ const testimonials = [
 const webProjects = [
   {
     name: "Shoe Store",
+    year: "2022",
     documentation: {
       url: "https://github.com/Dtowerssj/shoes-store/blob/master/UML/DiagramasUML.pdf",
       icon: document},
@@ -286,6 +287,7 @@ const webProjects = [
   },
   {
     name: "MercadoLibre Clone",
+    year: "2021",
     description:
       "Marketplace inspired by MercadoLibre, built with React, Node.js and MongoDB: product listing and detail pages, user accounts with JWT authentication and a REST API. It started from a static HTML/CSS mockup.",
     tags: [
@@ -310,6 +312,7 @@ const webProjects = [
   },
   {
     name: "Trading Academy Platform",
+    year: "2022",
     description:
       "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. It talks to a Node.js, Express and MongoDB REST API with JWT authentication, published as a separate repository; connecting the course content is still pending.",
     tags: [
@@ -395,6 +398,7 @@ const webProjects = [
 const otherProjects = [
   {
     name: "IPv4 Calculator",
+    year: "2020",
     description:
       "Java Swing desktop app that analyzes an IPv4 address and mask: class (A-E), public or private, APIPA, multicast and reserved ranges, network, gateway and broadcast addresses, and host range. Each calculation is saved to PostgreSQL and can be browsed in a second window.",
     tags: [
@@ -414,6 +418,7 @@ const otherProjects = [
   },
   {
     name: "Heart Failure Prediction",
+    year: "2021",
     documentation: {
       url: "https://github.com/Dtowerssj/heart_failure_prediction/blob/main/HF_prediction.ipynb",
       icon: document},
@@ -439,6 +444,7 @@ const otherProjects = [
   },
   {
     name: "Zoo Management",
+    year: "2020",
     documentation: {
       url: "https://github.com/Dtowerssj/Zoo-Management/blob/master/Diagrama%20de%20clases%20Zoo.png",
       icon: document},
@@ -460,6 +466,7 @@ const otherProjects = [
   },
   {
     name: "Job Market Analysis - Technical Test",
+    year: "2021",
     documentation: {
       url: "https://github.com/Dtowerssj/reed_uk_data_analyze/blob/main/TechnicalTestTorre.ipynb",
       icon: document},
@@ -485,6 +492,7 @@ const otherProjects = [
   },
   {
     name: "TradingView to MT5 Bot",
+    year: "2022",
     description:
       "Python bot that receives TradingView webhook alerts and executes them on MetaTrader 5: opens BUY and SELL orders with stop loss and take profit, closes positions and moves stops, sizing each trade by a configurable percentage of account risk. Includes a Tkinter control panel.",
     tags: [
@@ -507,6 +515,7 @@ const otherProjects = [
   },
   {
     name: "AI Game Recommender",
+    year: "2021",
     documentation: {
       url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
       icon: document},
@@ -528,6 +537,7 @@ const otherProjects = [
   },
   {
     name: "Car Racer",
+    year: "2021",
     description:
       "Endless-runner browser game drawn on an HTML canvas. Jump over the pedestrians to score, with sound effects and background music. Built with no frameworks.",
     tags: [
@@ -555,6 +565,7 @@ const otherProjects = [
 const mobileProjects = [
   {
     name: "Zerux",
+    year: "2023 - 2024",
     description:
       "Smart business management platform, published on Google Play and built at Waku Software with React Native, Expo and TypeScript. It handles invoicing and accounting, manages inventory with a QR scanner, prints invoices on thermal printers through a native connection, connects to point-of-sale card terminals to take card payments, shows sales, accounts and customers in a dashboard, and includes an assistant powered by the OpenAI API that answers questions about the business data.",
     tags: [
@@ -589,6 +600,7 @@ const mobileProjects = [
   },
   {
     name: "Misión Árbol",
+    year: "2023 - 2024",
     description:
       "Mobile app built at Waku Software with React Native, Expo and TypeScript for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat powered by the OpenAI (ChatGPT) API.",
     tags: [
@@ -616,6 +628,7 @@ const mobileProjects = [
   },
   {
     name: "Vital",
+    year: "2023 - 2024",
     description:
       "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
     tags: [
@@ -638,6 +651,7 @@ const mobileProjects = [
   },
   {
     name: "Pegasus",
+    year: "2021",
     description:
       "Uber Eats-style food delivery app built with React Native and Expo for a university mobile development course, together with a classmate. Users sign in and browse the available restaurants; establishments register and manage their own product catalog (create, edit and delete). The delivery branches add a Google Maps screen and a Stripe payment prototype. It talks to a Node.js, Express and PostgreSQL REST API. The original backend is offline, so the screenshots use sample data; the map screen is rendered with OpenStreetMap tiles in place of Google Maps, which needs an API key.",
     tags: [
@@ -669,6 +683,7 @@ const mobileProjects = [
   },
   {
     name: "Crypto Tracker",
+    year: "2021",
     description:
       "Mobile app that tracks the top 100 cryptocurrencies by market cap, showing live prices from the CoinGecko API with 24-hour change indicators.",
     tags: [

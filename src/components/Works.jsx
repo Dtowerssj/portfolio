@@ -12,6 +12,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
+  year,
   description,
   tags,
   image,
@@ -81,7 +82,14 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <div className='flex items-start justify-between gap-3'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            {year && (
+              <span className='shrink-0 mt-2 px-2.5 py-0.5 rounded-full border border-[#915eff]/40 bg-black-200 text-secondary text-[12px] font-medium tracking-wider'>
+                {year}
+              </span>
+            )}
+          </div>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
