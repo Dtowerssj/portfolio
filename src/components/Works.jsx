@@ -21,7 +21,12 @@ const ProjectCard = ({
   live_icon
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", (index % 3) * 0.3, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.15 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -134,4 +139,6 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+// The projects section is far taller than the screen, so its cards animate in on their own as they
+// scroll into view instead of waiting for a share of the whole section to be visible.
+export default SectionWrapper(Works, "", "some");
