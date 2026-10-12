@@ -8,6 +8,10 @@ import {
   python,
   kotlin,
   openai,
+  powershell,
+  azurefunctions,
+  microsoft365,
+  hudu,
   googleplay,
   java,
   android,
@@ -692,14 +696,17 @@ const aiProjects = [
       },
       {
         name: "PowerShell",
-        color: "bg-blue-800",
+        icon: powershell,
+        color: "bg-slate-700",
       },
       {
         name: "Azure Functions",
+        icon: azurefunctions,
         color: "bg-sky-900",
       },
       {
         name: "Microsoft Graph",
+        icon: microsoft365,
         color: "bg-indigo-900",
       },
     ],
@@ -718,14 +725,17 @@ const aiProjects = [
       },
       {
         name: "PowerShell",
-        color: "bg-blue-800",
+        icon: powershell,
+        color: "bg-slate-700",
       },
       {
         name: "Azure Functions",
+        icon: azurefunctions,
         color: "bg-sky-900",
       },
       {
         name: "Microsoft Graph",
+        icon: microsoft365,
         color: "bg-indigo-900",
       },
     ],
@@ -744,10 +754,12 @@ const aiProjects = [
       },
       {
         name: "Azure Functions",
+        icon: azurefunctions,
         color: "bg-sky-900",
       },
       {
         name: "Microsoft Graph",
+        icon: microsoft365,
         color: "bg-indigo-900",
       },
     ],
@@ -766,15 +778,23 @@ const aiProjects = [
       },
       {
         name: "PowerShell",
-        color: "bg-blue-800",
+        icon: powershell,
+        color: "bg-slate-700",
       },
       {
         name: "Azure Functions",
+        icon: azurefunctions,
         color: "bg-sky-900",
       },
       {
         name: "Microsoft Graph",
+        icon: microsoft365,
         color: "bg-indigo-900",
+      },
+      {
+        name: "Hudu",
+        icon: hudu,
+        color: "bg-slate-700",
       },
     ],
     image: magicdash,
@@ -827,9 +847,9 @@ const aiProjects = [
 ];
 
 const projectCategories = [
+  { title: "AI and Automation", projects: aiProjects },
   { title: "Mobile", projects: mobileProjects },
   { title: "Web", projects: webProjects },
-  { title: "AI and Automation", projects: aiProjects },
   { title: "Others", projects: otherProjects },
 ];
 

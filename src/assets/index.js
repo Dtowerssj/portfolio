@@ -16,6 +16,10 @@ import javascript from "./tech/javascript.png";
 import python from "./tech/python.png";
 import kotlin from "./tech/kotlin.png";
 import openai from "./tech/openai.svg";
+import powershell from "./tech/powershell.svg";
+import azurefunctions from "./tech/azurefunctions.svg";
+import microsoft365 from "./tech/microsoft365.svg";
+import hudu from "./tech/hudu.png";
 import googleplay from "./tech/googleplay.svg";
 import java from "./tech/java.png";
 import android from "./tech/android.png";
@@ -83,6 +87,10 @@ export {
   python,
   kotlin,
   openai,
+  powershell,
+  azurefunctions,
+  microsoft365,
+  hudu,
   googleplay,
   java,
   android,

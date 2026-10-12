@@ -1,8 +1,9 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from 'motion/react';
 
+import ImageViewer from "./ImageCarousel";
 import { styles } from "../styles";
 import { github, document, websiteicon } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -16,11 +17,15 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  images,
   source_code_link,
   documentation,
   live_url,
   live_icon
 }) => {
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const gallery = images && images.length > 0 ? images : [image];
+
   return (
     <motion.div
       variants={fadeIn("up", "spring", (index % 3) * 0.3, 0.75)}
@@ -29,14 +34,21 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.15 }}
     >
       <Tilt
-        tiltMaxAngleX={3}
-        tiltMaxAngleY={3}
+        tiltMaxAngleX={6}
+        tiltMaxAngleY={6}
         perspective={1500}
         scale={1}
         transitionSpeed={600}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div
+          className='relative w-full h-[230px] cursor-zoom-in'
+          role='button'
+          tabIndex={0}
+          aria-label={`View ${name} images`}
+          onClick={() => setViewerOpen(true)}
+          onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && setViewerOpen(true)}
+        >
           <img
             src={image}
             alt='project_image'
@@ -46,7 +58,7 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end gap-1 m-3 card-img_hover'>
 
             {documentation && (<div
-              onClick={() => window.open(documentation.url, "_blank")}
+              onClick={(e) => { e.stopPropagation(); window.open(documentation.url, "_blank"); }}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -58,7 +70,7 @@ const ProjectCard = ({
             
 
             {live_url && (<div
-              onClick={() => window.open(live_url, "_blank")}
+              onClick={(e) => { e.stopPropagation(); window.open(live_url, "_blank"); }}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -69,7 +81,7 @@ const ProjectCard = ({
             </div>)}
 
             {source_code_link && (<div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => { e.stopPropagation(); window.open(source_code_link, "_blank"); }}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -102,6 +114,13 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
+
+      <ImageViewer
+        images={gallery}
+        title={name}
+        open={viewerOpen}
+        onClose={() => setViewerOpen(false)}
+      />
     </motion.div>
   );
 };
