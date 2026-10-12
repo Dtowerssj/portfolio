@@ -521,7 +521,7 @@ const mobileProjects = [
   {
     name: "Zerux",
     description:
-      "Smart business management platform, published on Google Play and built at Waku Software with React Native, Expo and TypeScript. It handles invoicing and accounting, manages inventory with a QR scanner, prints invoices on thermal printers through a native connection, shows sales, accounts and customers in a dashboard, and includes an assistant powered by the OpenAI API that answers questions about the business data.",
+      "Smart business management platform, published on Google Play and built at Waku Software with React Native, Expo and TypeScript. It handles invoicing and accounting, manages inventory with a QR scanner, prints invoices on thermal printers through a native connection, connects to point-of-sale card terminals to take card payments, shows sales, accounts and customers in a dashboard, and includes an assistant powered by the OpenAI API that answers questions about the business data.",
     tags: [
       {
         name: "react native",
