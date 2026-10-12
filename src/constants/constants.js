@@ -540,8 +540,27 @@ const mobileProjects = [
   {
     name: "Misión Árbol",
     description:
-      "Mobile app for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat.",
-    tags: [],
+      "Mobile app built at Waku Software with React Native, Expo and TypeScript for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat powered by the OpenAI (ChatGPT) API.",
+    tags: [
+      {
+        name: "react native",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "expo",
+        color: "bg-gray-700",
+      },
+      {
+        name: "typescript",
+        icon: typescript,
+        color: "bg-blue-800",
+      },
+      {
+        name: "openai api",
+        color: "bg-emerald-900",
+      },
+    ],
     image: misionarbol,
   },
   {
