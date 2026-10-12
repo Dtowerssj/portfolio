@@ -55,6 +55,7 @@ import reeduk from "./reeduk.png";
 import tradingbot from "./tradingbot.png";
 import vital from "./vital.jpg";
 import misionarbol from "./misionarbol.jpg";
+import zerux from "./zerux.jpg";
 
 export {
   logo,
@@ -103,6 +104,7 @@ export {
   tradingbot,
   vital,
   misionarbol,
+  zerux,
   shoestore,
   document,
   websiteicon,

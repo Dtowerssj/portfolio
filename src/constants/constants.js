@@ -44,7 +44,8 @@ import {
   reeduk,
   tradingbot,
   vital,
-  misionarbol
+  misionarbol,
+  zerux
 } from "../assets";
 
 export const navLinks = [
@@ -516,6 +517,33 @@ const otherProjects = [
 
 const mobileProjects = [
   {
+    name: "Zerux",
+    description:
+      "Smart business management platform, published on Google Play and built at Waku Software with React Native, Expo and TypeScript. It handles invoicing and accounting, manages inventory with a QR scanner, prints invoices on thermal printers through a native connection, shows sales, accounts and customers in a dashboard, and includes an assistant powered by the OpenAI API that answers questions about the business data.",
+    tags: [
+      {
+        name: "react native",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "expo",
+        color: "bg-gray-700",
+      },
+      {
+        name: "typescript",
+        icon: typescript,
+        color: "bg-blue-800",
+      },
+      {
+        name: "openai api",
+        color: "bg-emerald-900",
+      },
+    ],
+    image: zerux,
+    live_url: "https://play.google.com/store/apps/details?id=com.dtowerssj.nevula_mobile",
+  },
+  {
     name: "Vital",
     description:
       "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
@@ -582,7 +610,7 @@ const mobileProjects = [
     image: cryptotracker,
     source_code_link: "https://github.com/Dtowerssj/crypto-tracker-app",
   },
-  // RESERVED SLOT (hidden): Waku thermal printer module. Activate it once we know where the
+  // RESERVED SLOT (hidden): standalone Waku thermal printer module (its app is Zerux, shown above). Activate it once we know where the
   // code can live (it may belong to Waku's GitHub account) and what the app is called.
   // Credit Andre Carvalho's expo-serialport (MIT) if it is based on it. Needs a card image.
   // {
