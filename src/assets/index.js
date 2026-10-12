@@ -60,6 +60,10 @@ import misionarbol from "./misionarbol.jpg";
 import zerux from "./zerux.jpg";
 import pegasus from "./pegasus.jpg";
 import tpf from "./tpf.jpg";
+import offboarding from "./offboarding.png";
+import newuser from "./newuser.png";
+import magicdash from "./magicdash.png";
+import signinmonitor from "./signinmonitor.png";
 
 export {
   logo,
@@ -113,6 +117,10 @@ export {
   zerux,
   pegasus,
   tpf,
+  offboarding,
+  newuser,
+  magicdash,
+  signinmonitor,
   shoestore,
   document,
   websiteicon,

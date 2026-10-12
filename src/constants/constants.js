@@ -49,7 +49,11 @@ import {
   misionarbol,
   zerux,
   pegasus,
-  tpf
+  tpf,
+  offboarding,
+  newuser,
+  magicdash,
+  signinmonitor
 } from "../assets";
 
 export const navLinks = [
@@ -675,6 +679,106 @@ const mobileProjects = [
 
 // Categories without projects are not rendered, so aiProjects can stay empty until it is filled.
 const aiProjects = [
+  {
+    name: "Employee Offboarding Orchestrator",
+    year: "2025 - 2026",
+    description:
+      "Azure Durable Functions orchestrator that automates the full offboarding of an employee in a managed Microsoft 365 tenant, built for a managed services provider. Eighteen steps in eight phases: it sets up the auto-reply, forwarding and shared mailbox, blocks sign-in, revokes sessions, resets the password, removes groups and licences, disables devices, grants OneDrive access and closes the loop in the ticketing and documentation platforms. What Graph API cannot do runs in a separate PowerShell function app. It authenticates with Managed Identity and federated credentials, so there are no client secrets, and every step reports its own result so a partial failure never hides the rest. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "Node.js",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "PowerShell",
+        color: "bg-blue-800",
+      },
+      {
+        name: "Azure Functions",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Microsoft Graph",
+        color: "bg-indigo-900",
+      },
+    ],
+    image: offboarding,
+  },
+  {
+    name: "New User Automation",
+    year: "2025 - 2026",
+    description:
+      "Onboarding automation used day to day by a managed services provider. One request creates the whole user: the Microsoft 365 account with a generated password and licences, group, Teams and SharePoint memberships, a contact in the ticketing platform and a people asset in the documentation platform with the password stored and linked to the workstation. A companion function feeds each client's licences, teams and sites to the request form. It exists as a PowerShell function and as a Node.js rewrite. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "Node.js",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "PowerShell",
+        color: "bg-blue-800",
+      },
+      {
+        name: "Azure Functions",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Microsoft Graph",
+        color: "bg-indigo-900",
+      },
+    ],
+    image: newuser,
+  },
+  {
+    name: "Sign-in Risk Monitor",
+    year: "2026",
+    description:
+      "Hourly monitor that reads the Entra ID sign-in logs of every managed tenant and flags successful sign-ins from outside the expected region. Each event gets a risk level (international, Entra risk flags, legacy authentication) and a triage score that weighs safe signals, such as compliant devices and named locations, against off-hours access and sensitive apps. It opens or updates a ticket with a structured note, raises its priority when needed and emails the team. A sibling monitor watches new device registrations. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "Node.js",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "Azure Functions",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Microsoft Graph",
+        color: "bg-indigo-900",
+      },
+    ],
+    image: signinmonitor,
+  },
+  {
+    name: "Magic Dash Dashboards",
+    year: "2025 - 2026",
+    description:
+      "Scheduled functions that publish live dashboards into the documentation platform for every managed client, refreshed each morning: Microsoft 365 licences and MFA adoption per user compared with the company-wide average, Microsoft Secure Score with a breakdown by service, and network speed-test history from the monitoring platform. Technicians see the state of each tenant at a glance instead of opening every admin portal. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "Node.js",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "PowerShell",
+        color: "bg-blue-800",
+      },
+      {
+        name: "Azure Functions",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Microsoft Graph",
+        color: "bg-indigo-900",
+      },
+    ],
+    image: magicdash,
+  },
   {
     name: "AI Game Recommender",
     year: "2021",
