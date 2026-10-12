@@ -595,7 +595,7 @@ const mobileProjects = [
   {
     name: "Pegasus",
     description:
-      "Uber Eats-style food delivery app built with React Native and Expo for a university mobile development course, together with a classmate. Users sign in and browse the available restaurants; establishments register and manage their own product catalog (create, edit and delete). The delivery branches add a Google Maps screen and a Stripe payment prototype. It talks to a Node.js, Express and PostgreSQL REST API. The original backend is offline, so the screenshots, taken from the main branch, use sample data.",
+      "Uber Eats-style food delivery app built with React Native and Expo for a university mobile development course, together with a classmate. Users sign in and browse the available restaurants; establishments register and manage their own product catalog (create, edit and delete). The delivery branches add a Google Maps screen and a Stripe payment prototype. It talks to a Node.js, Express and PostgreSQL REST API. The original backend is offline, so the screenshots use sample data; the map screen is rendered with OpenStreetMap tiles in place of Google Maps, which needs an API key.",
     tags: [
       {
         name: "react native",
