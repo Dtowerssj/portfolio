@@ -127,7 +127,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {projectCategories.map((category) => (
+      {projectCategories.filter((category) => category.projects.length > 0).map((category) => (
         <div key={category.title} className='mt-20'>
           <h3 className='text-white font-bold sm:text-[32px] text-[26px]'>
             {category.title}

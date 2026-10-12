@@ -252,6 +252,41 @@ const testimonials = [
 
 const webProjects = [
   {
+    name: "Trading Academy Platform",
+    year: "2022",
+    description:
+      "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. It talks to a Node.js, Express and MongoDB REST API with JWT authentication, published as a separate repository; connecting the course content is still pending.",
+    tags: [
+      {
+        name: "JavaScript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+      {
+        name: "React",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "CSS",
+        color: "bg-pink-900",
+      },
+      {
+        name: "Node.js",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "MongoDB",
+        icon: mongodb,
+        color: "bg-green-900",
+      },
+    ],
+    image: tpf,
+    source_code_link: "https://github.com/Dtowerssj/tpf-web",
+    live_url: "https://tpf-web.vercel.app/",
+  },
+  {
     name: "Shoe Store",
     year: "2022",
     documentation: {
@@ -266,17 +301,17 @@ const webProjects = [
         color: "bg-yellow-600",
       },
       {
-        name: "react",
+        name: "React",
         icon: reactjs,
         color: "bg-blue-900",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         icon: mongodb,
         color: "bg-green-900",
       },
       {
-        name: "nodejs",
+        name: "Node.js",
         icon: nodejs,
         color: "bg-emerald-900",
       },
@@ -292,58 +327,23 @@ const webProjects = [
       "Marketplace inspired by MercadoLibre, built with React, Node.js and MongoDB: product listing and detail pages, user accounts with JWT authentication and a REST API. It started from a static HTML/CSS mockup.",
     tags: [
       {
-        name: "react",
+        name: "React",
         icon: reactjs,
         color: "bg-blue-900",
       },
       {
-        name: "nodejs",
+        name: "Node.js",
         icon: nodejs,
         color: "bg-emerald-900",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         icon: mongodb,
         color: "bg-green-900",
       },
     ],
     image: mlclone,
     source_code_link: "https://github.com/Dtowerssj/ML",
-  },
-  {
-    name: "Trading Academy Platform",
-    year: "2022",
-    description:
-      "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. It talks to a Node.js, Express and MongoDB REST API with JWT authentication, published as a separate repository; connecting the course content is still pending.",
-    tags: [
-      {
-        name: "JavaScript",
-        icon: javascript,
-        color: "bg-yellow-600",
-      },
-      {
-        name: "react",
-        icon: reactjs,
-        color: "bg-blue-900",
-      },
-      {
-        name: "css",
-        color: "bg-pink-900",
-      },
-      {
-        name: "nodejs",
-        icon: nodejs,
-        color: "bg-emerald-900",
-      },
-      {
-        name: "mongodb",
-        icon: mongodb,
-        color: "bg-green-900",
-      },
-    ],
-    image: tpf,
-    source_code_link: "https://github.com/Dtowerssj/tpf-web",
-    live_url: "https://tpf-web.vercel.app/",
   },
   // Template cards hidden for now (not real projects):
   //   {
@@ -352,19 +352,19 @@ const webProjects = [
   //       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
   //     tags: [
   //       {
-  //         name: "react",
+  //         name: "React",
   //         color: "blue-text-gradient",
   //       },
   //       {
-  //         name: "restapi",
+  //         name: "REST API",
   //         color: "green-text-gradient",
   //       },
   //       {
-  //         name: "scss",
+  //         name: "SCSS",
   //         color: "pink-text-gradient",
   //       },
   //       {
-  //         name: "tailwind",
+  //         name: "Tailwind",
   //         icon: tailwind,
   //         color: "bg-cyan-800",
   //       },
@@ -378,15 +378,15 @@ const webProjects = [
   //       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
   //     tags: [
   //       {
-  //         name: "nextjs",
+  //         name: "Next.js",
   //         color: "blue-text-gradient",
   //       },
   //       {
-  //         name: "supabase",
+  //         name: "Supabase",
   //         color: "green-text-gradient",
   //       },
   //       {
-  //         name: "css",
+  //         name: "CSS",
   //         color: "pink-text-gradient",
   //       },
   //     ],
@@ -403,12 +403,12 @@ const otherProjects = [
       "Java Swing desktop app that analyzes an IPv4 address and mask: class (A-E), public or private, APIPA, multicast and reserved ranges, network, gateway and broadcast addresses, and host range. Each calculation is saved to PostgreSQL and can be browsed in a second window.",
     tags: [
       {
-        name: "java",
+        name: "Java",
         icon: java,
         color: "bg-red-900",
       },
       {
-        name: "postgresql",
+        name: "PostgreSQL",
         icon: postgre,
         color: "bg-blue-900",
       },
@@ -426,16 +426,16 @@ const otherProjects = [
       "University thesis in data science: exploratory analysis of a 299-patient heart failure dataset and a comparison of five classifiers (logistic regression, SVM, decision tree, random forest and gradient boosting) to predict patient mortality, reaching up to 91.67% test accuracy.",
     tags: [
       {
-        name: "python",
+        name: "Python",
         icon: python,
         color: "bg-sky-800",
       },
       {
-        name: "scikit-learn",
+        name: "Scikit-learn",
         color: "bg-orange-800",
       },
       {
-        name: "pandas",
+        name: "Pandas",
         color: "bg-indigo-900",
       },
     ],
@@ -452,12 +452,12 @@ const otherProjects = [
       "Object-oriented Java application for managing a zoo of vertebrates. An abstract animal class is extended by mammals, birds, fish, amphibians and reptiles, with interfaces for movement, attack and defense, and a Swing menu to pick the animal class. Includes the UML class diagram.",
     tags: [
       {
-        name: "java",
+        name: "Java",
         icon: java,
         color: "bg-red-900",
       },
       {
-        name: "uml",
+        name: "UML",
         color: "bg-purple-900",
       },
     ],
@@ -474,16 +474,16 @@ const otherProjects = [
       "Data analysis of the Reed UK job board, built for a data science internship technical test: job demand by region, the most popular categories and job titles, annual salaries in London and South East England, and posting trends over time.",
     tags: [
       {
-        name: "python",
+        name: "Python",
         icon: python,
         color: "bg-sky-800",
       },
       {
-        name: "pandas",
+        name: "Pandas",
         color: "bg-indigo-900",
       },
       {
-        name: "seaborn",
+        name: "Seaborn",
         color: "bg-teal-900",
       },
     ],
@@ -497,16 +497,16 @@ const otherProjects = [
       "Python bot that receives TradingView webhook alerts and executes them on MetaTrader 5: opens BUY and SELL orders with stop loss and take profit, closes positions and moves stops, sizing each trade by a configurable percentage of account risk. Includes a Tkinter control panel.",
     tags: [
       {
-        name: "python",
+        name: "Python",
         icon: python,
         color: "bg-sky-800",
       },
       {
-        name: "flask",
+        name: "Flask",
         color: "bg-gray-700",
       },
       {
-        name: "metatrader5",
+        name: "MetaTrader 5",
         color: "bg-amber-800",
       },
     ],
@@ -523,12 +523,12 @@ const otherProjects = [
       "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
     tags: [
       {
-        name: "mongodb",
+        name: "MongoDB",
         icon: mongodb,
         color: "bg-green-900",
       },
       {
-        name: "algorithms",
+        name: "Algorithms",
         color: "bg-purple-900",
       },
     ],
@@ -547,12 +547,12 @@ const otherProjects = [
         color: "bg-yellow-600",
       },
       {
-        name: "html",
+        name: "HTML",
         icon: html,
         color: "bg-orange-800",
       },
       {
-        name: "css",
+        name: "CSS",
         icon: css,
         color: "bg-blue-800",
       },
@@ -605,21 +605,21 @@ const mobileProjects = [
       "Mobile app built at Waku Software with React Native, Expo and TypeScript for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat powered by the OpenAI (ChatGPT) API.",
     tags: [
       {
-        name: "react Native",
+        name: "React Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
       {
-        name: "expo",
+        name: "Expo",
         color: "bg-gray-700",
       },
       {
-        name: "typescript",
+        name: "TypeScript",
         icon: typescript,
         color: "bg-blue-800",
       },
       {
-        name: "openai api",
+        name: "OpenAI",
         icon: openai,
         color: "bg-emerald-900",
       },
@@ -642,7 +642,7 @@ const mobileProjects = [
         color: "bg-gray-700",
       },
       {
-        name: "Typescript",
+        name: "TypeScript",
         icon: typescript,
         color: "bg-blue-800",
       },
@@ -661,7 +661,7 @@ const mobileProjects = [
         color: "bg-blue-900",
       },
       {
-        name: "expo",
+        name: "Expo",
         color: "bg-gray-700",
       },
       {
@@ -670,11 +670,11 @@ const mobileProjects = [
         color: "bg-yellow-600",
       },
       {
-        name: "google maps",
+        name: "Google Maps",
         color: "bg-green-900",
       },
       {
-        name: "stripe",
+        name: "Stripe",
         color: "bg-indigo-900",
       },
     ],
@@ -693,7 +693,7 @@ const mobileProjects = [
         color: "bg-blue-900",
       },
       {
-        name: "javascript",
+        name: "JavaScript",
         icon: javascript,
         color: "bg-yellow-600",
       },
@@ -709,18 +709,22 @@ const mobileProjects = [
   //   description:
   //     "Native Android module (Kotlin) for a React Native app at Waku Software, built to print on thermal printers supplied by the Venezuelan government that had no public documentation.",
   //   tags: [
-  //     { name: "kotlin", icon: kotlin, color: "bg-purple-900" },
-  //     { name: "react Native", icon: reactjs, color: "bg-blue-900" },
-  //     { name: "android", icon: android, color: "bg-green-900" },
+  //     { name: "Kotlin", icon: kotlin, color: "bg-purple-900" },
+  //     { name: "React Native", icon: reactjs, color: "bg-blue-900" },
+  //     { name: "Android", icon: android, color: "bg-green-900" },
   //   ],
   //   image: <card image to create>,
   //   source_code_link: <repo url to decide>,
   // },
 ];
 
+// Categories without projects are not rendered, so aiProjects can stay empty until it is filled.
+const aiProjects = [];
+
 const projectCategories = [
-  { title: "Web", projects: webProjects },
   { title: "Mobile", projects: mobileProjects },
+  { title: "Web", projects: webProjects },
+  { title: "AI and Automation", projects: aiProjects },
   { title: "Others", projects: otherProjects },
 ];
 
