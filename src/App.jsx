@@ -16,7 +16,8 @@ const App = () => {
         <Experience /> 
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* Testimonials hidden for now (the data lives in constants.js). To show them again, uncomment: */}
+        {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

@@ -9,7 +9,6 @@ My personal developer portfolio: an interactive single-page site with 3D scenes,
 - **Experience** as a vertical timeline.
 - **Tech** stack with technology icons.
 - **Projects**, grouped into Web, Mobile and Others, with links to the code, documentation and live demos.
-- **Testimonials** from people I have worked with.
 - **Contact** form with a 3D planet.
 
 ## Tech stack
