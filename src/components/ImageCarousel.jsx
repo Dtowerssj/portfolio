@@ -43,7 +43,7 @@ const ImageCarousel = ({ images, title, startIndex = 0, onClose }) => {
 
   return createPortal(
     <motion.div
-      className='fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 bg-black/80 backdrop-blur-sm'
+      className='fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 bg-black/75 backdrop-blur-[2px]'
       role='dialog'
       aria-modal='true'
       aria-label={`${title} images`}

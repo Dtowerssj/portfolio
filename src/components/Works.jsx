@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
-import { motion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 
 import ImageViewer from "./ImageCarousel";
 import { styles } from "../styles";
@@ -125,7 +125,115 @@ const ProjectCard = ({
   );
 };
 
+const countProjects = (category) =>
+  category.projects
+    ? category.projects.length
+    : category.children.reduce((sum, child) => sum + countProjects(child), 0);
+
+const collectDefaults = (categories, acc = {}) => {
+  categories.forEach((category) => {
+    acc[category.title] = Boolean(category.defaultOpen);
+    if (category.children) collectDefaults(category.children, acc);
+  });
+  return acc;
+};
+
+const Chevron = ({ open }) => (
+  <svg
+    width='18'
+    height='18'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2.5'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+  >
+    <path d='M6 9l6 6 6-6' />
+  </svg>
+);
+
+// A collapsible category: cards when it has projects, nested categories when it has children.
+const CategoryBlock = ({ category, level, openState, onToggle }) => {
+  const open = openState[category.title];
+  const [clip, setClip] = useState(false);
+  const total = countProjects(category);
+  if (total === 0) return null;
+
+  return (
+    <div className={level === 1 ? "mt-14" : "mt-10"}>
+      <h3 className='m-0'>
+        <button
+          type='button'
+          aria-expanded={open}
+          onClick={() => onToggle(category.title)}
+          className={`group flex w-full items-center gap-3 text-left cursor-pointer border-b pb-3 transition-colors ${
+            level === 1 ? "border-white/10 hover:border-[#915eff]/50" : "border-white/5 hover:border-[#915eff]/40"
+          }`}
+        >
+          <span
+            className={`text-white font-bold ${
+              level === 1 ? "sm:text-[32px] text-[26px]" : "sm:text-[26px] text-[22px]"
+            }`}
+          >
+            {category.title}
+          </span>
+          <span className='px-2.5 py-0.5 rounded-full border border-[#915eff]/40 bg-black-200 text-secondary text-[12px] font-medium tracking-wider'>
+            {total}
+          </span>
+          <span className='ml-auto text-secondary group-hover:text-white transition-colors'>
+            <Chevron open={open} />
+          </span>
+        </button>
+      </h3>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            key='panel'
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
+            onAnimationStart={() => setClip(true)}
+            onAnimationComplete={() => setClip(false)}
+            className={clip ? "overflow-hidden" : ""}
+          >
+            {category.projects ? (
+              <div className='mt-8 flex flex-wrap gap-7'>
+                {category.projects.map((project, index) => (
+                  <ProjectCard
+                    key={`${category.title}-${project.name}`}
+                    index={index}
+                    {...project}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className={level === 1 ? "pl-0 sm:pl-6" : ""}>
+                {category.children.map((child) => (
+                  <CategoryBlock
+                    key={child.title}
+                    category={child}
+                    level={level + 1}
+                    openState={openState}
+                    onToggle={onToggle}
+                  />
+                ))}
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 const Works = () => {
+  const [openState, setOpenState] = useState(() => collectDefaults(projectCategories));
+  const toggle = (title) => setOpenState((state) => ({ ...state, [title]: !state[title] }));
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -146,21 +254,14 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {projectCategories.filter((category) => category.projects.length > 0).map((category) => (
-        <div key={category.title} className='mt-20'>
-          <h3 className='text-white font-bold sm:text-[32px] text-[26px]'>
-            {category.title}
-          </h3>
-          <div className='mt-8 flex flex-wrap gap-7'>
-            {category.projects.map((project, index) => (
-              <ProjectCard
-                key={`${category.title}-${project.name}`}
-                index={index}
-                {...project}
-              />
-            ))}
-          </div>
-        </div>
+      {projectCategories.map((category) => (
+        <CategoryBlock
+          key={category.title}
+          category={category}
+          level={1}
+          openState={openState}
+          onToggle={toggle}
+        />
       ))}
     </>
   );

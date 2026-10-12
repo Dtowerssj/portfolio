@@ -64,6 +64,11 @@ import misionarbol from "./misionarbol.jpg";
 import zerux from "./zerux.jpg";
 import pegasus from "./pegasus.jpg";
 import tpf from "./tpf.jpg";
+import zeruxdetail from "./zeruxdetail.jpg";
+import vitaldetail from "./vitaldetail.jpg";
+import misionarboldetail from "./misionarboldetail.jpg";
+import pegasusdetail from "./pegasusdetail.jpg";
+import cryptotrackerdetail from "./cryptotrackerdetail.jpg";
 import offboarding from "./offboarding.png";
 import newuser from "./newuser.png";
 import magicdash from "./magicdash.png";
@@ -125,6 +130,11 @@ export {
   zerux,
   pegasus,
   tpf,
+  zeruxdetail,
+  vitaldetail,
+  misionarboldetail,
+  pegasusdetail,
+  cryptotrackerdetail,
   offboarding,
   newuser,
   magicdash,
