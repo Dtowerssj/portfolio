@@ -54,6 +54,7 @@ import mlclone from "./mlclone.jpg";
 import reeduk from "./reeduk.png";
 import tradingbot from "./tradingbot.png";
 import vital from "./vital.jpg";
+import misionarbol from "./misionarbol.jpg";
 
 export {
   logo,
@@ -101,6 +102,7 @@ export {
   reeduk,
   tradingbot,
   vital,
+  misionarbol,
   shoestore,
   document,
   websiteicon,

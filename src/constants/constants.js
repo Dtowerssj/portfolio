@@ -43,7 +43,8 @@ import {
   mlclone,
   reeduk,
   tradingbot,
-  vital
+  vital,
+  misionarbol
 } from "../assets";
 
 export const navLinks = [
@@ -535,6 +536,13 @@ const mobileProjects = [
       },
     ],
     image: vital,
+  },
+  {
+    name: "Misión Árbol",
+    description:
+      "Mobile app for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat.",
+    tags: [],
+    image: misionarbol,
   },
   {
     name: "Crypto Tracker",
