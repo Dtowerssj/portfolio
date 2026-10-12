@@ -179,9 +179,6 @@ const CategoryBlock = ({ category, level, openState, onToggle }) => {
           >
             {category.title}
           </span>
-          <span className='px-2.5 py-0.5 rounded-full border border-[#915eff]/40 bg-black-200 text-secondary text-[12px] font-medium tracking-wider'>
-            {total}
-          </span>
           <span className='ml-auto text-secondary group-hover:text-white transition-colors'>
             <Chevron open={open} />
           </span>
