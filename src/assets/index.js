@@ -46,7 +46,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import carracer from "./carracer.png";
 import gamerec from "./gamerec.png";
-import cryptotracker from "./cryptotracker.png";
+import cryptotracker from "./cryptotracker.jpg";
 import zoo from "./zoo.png";
 import heartfailure from "./heartfailure.png";
 import ipcalc from "./ipcalc.png";
