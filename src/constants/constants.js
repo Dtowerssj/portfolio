@@ -209,7 +209,7 @@ const experiences = [
     company_name: "Waku Software",
     icon: waku,
     iconBg: "#E6DEDD",
-    date: "May 2023 - Present",
+    date: "April 2023 - September 2024",
     points: [
       "Developing and maintaining mobile applications utilizing React Native, Expo, TypeScript, and incorporated Native Modules (Kotlin).",
       "Innovative features development, including the implementation of an AI-driven chat using Chat-GPT, a QR code scanner for efficient inventory and billing management of products, and building the native Android (Kotlin) module that connects the React Native app to thermal printers supplied by the Venezuelan government, which had no public documentation.",
