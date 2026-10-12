@@ -258,7 +258,7 @@ const webProjects = [
       "Full MERN Stack Web-based platform that allows users to buy shoes, and allows administrators to manage their merchandise.",
     tags: [
       {
-        name: "javascript",
+        name: "JavaScript",
         icon: javascript,
         color: "bg-yellow-600",
       },
@@ -363,7 +363,7 @@ const otherProjects = [
       "Endless-runner browser game drawn on an HTML canvas. Jump over the pedestrians to score, with sound effects and background music. Built with no frameworks.",
     tags: [
       {
-        name: "javascript",
+        name: "JavaScript",
         icon: javascript,
         color: "bg-yellow-600",
       },
@@ -396,7 +396,6 @@ const otherProjects = [
       },
       {
         name: "algorithms",
-        icon: document,
         color: "bg-purple-900",
       },
     ],
@@ -418,7 +417,6 @@ const otherProjects = [
       },
       {
         name: "uml",
-        icon: document,
         color: "bg-purple-900",
       },
     ],
@@ -525,26 +523,26 @@ const mobileProjects = [
       "Smart business management platform, published on Google Play and built at Waku Software with React Native, Expo and TypeScript. It handles invoicing and accounting, manages inventory with a QR scanner, prints invoices on thermal printers through a native connection, connects to point-of-sale card terminals to take card payments, shows sales, accounts and customers in a dashboard, and includes an assistant powered by the OpenAI API that answers questions about the business data.",
     tags: [
       {
-        name: "react native",
+        name: "React Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
       {
-        name: "expo",
+        name: "Expo",
         color: "bg-gray-700",
       },
       {
-        name: "typescript",
+        name: "TypeScript",
         icon: typescript,
         color: "bg-blue-800",
       },
       {
-        name: "kotlin",
+        name: "Kotlin",
         icon: kotlin,
         color: "bg-purple-900",
       },
       {
-        name: "openai api",
+        name: "OpenAI",
         icon: openai,
         color: "bg-emerald-900",
       },
@@ -558,16 +556,16 @@ const mobileProjects = [
       "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
     tags: [
       {
-        name: "react native",
+        name: "React Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
       {
-        name: "expo",
+        name: "Expo",
         color: "bg-gray-700",
       },
       {
-        name: "typescript",
+        name: "Typescript",
         icon: typescript,
         color: "bg-blue-800",
       },
@@ -580,7 +578,7 @@ const mobileProjects = [
       "Mobile app built at Waku Software with React Native, Expo and TypeScript for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat powered by the OpenAI (ChatGPT) API.",
     tags: [
       {
-        name: "react native",
+        name: "react Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
@@ -607,7 +605,7 @@ const mobileProjects = [
       "Uber Eats-style food delivery app built with React Native and Expo for a university mobile development course, together with a classmate. Users sign in and browse the available restaurants; establishments register and manage their own product catalog (create, edit and delete). The delivery branches add a Google Maps screen and a Stripe payment prototype. It talks to a Node.js, Express and PostgreSQL REST API. The original backend is offline, so the screenshots use sample data; the map screen is rendered with OpenStreetMap tiles in place of Google Maps, which needs an API key.",
     tags: [
       {
-        name: "react native",
+        name: "React Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
@@ -616,7 +614,7 @@ const mobileProjects = [
         color: "bg-gray-700",
       },
       {
-        name: "javascript",
+        name: "JavaScript",
         icon: javascript,
         color: "bg-yellow-600",
       },
@@ -638,7 +636,7 @@ const mobileProjects = [
       "Mobile app that tracks the top 100 cryptocurrencies by market cap, showing live prices from the CoinGecko API with 24-hour change indicators.",
     tags: [
       {
-        name: "react native",
+        name: "React Native",
         icon: reactjs,
         color: "bg-blue-900",
       },
@@ -660,7 +658,7 @@ const mobileProjects = [
   //     "Native Android module (Kotlin) for a React Native app at Waku Software, built to print on thermal printers supplied by the Venezuelan government that had no public documentation.",
   //   tags: [
   //     { name: "kotlin", icon: kotlin, color: "bg-purple-900" },
-  //     { name: "react native", icon: reactjs, color: "bg-blue-900" },
+  //     { name: "react Native", icon: reactjs, color: "bg-blue-900" },
   //     { name: "android", icon: android, color: "bg-green-900" },
   //   ],
   //   image: <card image to create>,
