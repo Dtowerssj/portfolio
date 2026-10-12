@@ -58,6 +58,7 @@ import {
   vitaldetail,
   misionarboldetail,
   pegasusdetail,
+  pegasusdetail2,
   cryptotrackerdetail,
   offboarding,
   newuser,
@@ -563,7 +564,7 @@ const mobileProjects = [
       },
     ],
     image: zerux,
-    images: [zerux, zeruxdetail],
+    images: [zeruxdetail],
     live_url: "https://play.google.com/store/apps/details?id=com.dtowerssj.nevula_mobile",
     live_icon: googleplay,
   },
@@ -594,7 +595,7 @@ const mobileProjects = [
       },
     ],
     image: misionarbol,
-    images: [misionarbol, misionarboldetail],
+    images: [misionarboldetail],
   },
   {
     name: "Vital",
@@ -618,7 +619,7 @@ const mobileProjects = [
       },
     ],
     image: vital,
-    images: [vital, vitaldetail],
+    images: [vitaldetail],
   },
   {
     name: "Pegasus",
@@ -650,7 +651,7 @@ const mobileProjects = [
       },
     ],
     image: pegasus,
-    images: [pegasus, pegasusdetail],
+    images: [pegasusdetail, pegasusdetail2],
     source_code_link: "https://github.com/Dtowerssj/pegasus-app",
   },
   {
@@ -671,7 +672,7 @@ const mobileProjects = [
       },
     ],
     image: cryptotracker,
-    images: [cryptotracker, cryptotrackerdetail],
+    images: [cryptotrackerdetail],
     source_code_link: "https://github.com/Dtowerssj/crypto-tracker-app",
   },
   // RESERVED SLOT (hidden): standalone Waku thermal printer module (its app is Zerux, shown above). Activate it once we know where the
@@ -857,14 +858,14 @@ const aiProjects = [
 ];
 
 // Nested, collapsible categories. A category with `projects` shows cards; one with `children` holds other
-// categories. `defaultOpen` is only the initial state.
+// categories. `defaultOpen` is only the initial state; `collapsible: false` makes a plain heading.
 const projectCategories = [
   { title: "AI and Automation", defaultOpen: true, projects: aiProjects },
   {
     title: "Software Development",
-    defaultOpen: false,
+    collapsible: false,
     children: [
-      { title: "Mobile", defaultOpen: true, projects: mobileProjects },
+      { title: "Mobile", defaultOpen: false, projects: mobileProjects },
       { title: "Web", defaultOpen: false, projects: webProjects },
       { title: "Others", defaultOpen: false, projects: otherProjects },
     ],

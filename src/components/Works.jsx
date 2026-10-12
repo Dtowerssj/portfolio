@@ -161,6 +161,48 @@ const CategoryBlock = ({ category, level, openState, onToggle }) => {
   const total = countProjects(category);
   if (total === 0) return null;
 
+  const content = category.projects ? (
+    <div className='mt-8 flex flex-wrap gap-7'>
+      {category.projects.map((project, index) => (
+        <ProjectCard
+          key={`${category.title}-${project.name}`}
+          index={index}
+          {...project}
+        />
+      ))}
+    </div>
+  ) : (
+    <div className={level === 1 ? "pl-0 sm:pl-6" : ""}>
+      {category.children.map((child) => (
+        <CategoryBlock
+          key={child.title}
+          category={child}
+          level={level + 1}
+          openState={openState}
+          onToggle={onToggle}
+        />
+      ))}
+    </div>
+  );
+
+  // A plain heading (not a toggle): its content is always visible.
+  if (category.collapsible === false) {
+    return (
+      <div className={level === 1 ? "mt-14" : "mt-10"}>
+        <h3 className='m-0 border-b border-white/10 pb-3'>
+          <span
+            className={`text-white font-bold ${
+              level === 1 ? "sm:text-[32px] text-[26px]" : "sm:text-[26px] text-[22px]"
+            }`}
+          >
+            {category.title}
+          </span>
+        </h3>
+        {content}
+      </div>
+    );
+  }
+
   return (
     <div className={level === 1 ? "mt-14" : "mt-10"}>
       <h3 className='m-0'>
@@ -197,29 +239,7 @@ const CategoryBlock = ({ category, level, openState, onToggle }) => {
             onAnimationComplete={() => setClip(false)}
             className={clip ? "overflow-hidden" : ""}
           >
-            {category.projects ? (
-              <div className='mt-8 flex flex-wrap gap-7'>
-                {category.projects.map((project, index) => (
-                  <ProjectCard
-                    key={`${category.title}-${project.name}`}
-                    index={index}
-                    {...project}
-                  />
-                ))}
-              </div>
-            ) : (
-              <div className={level === 1 ? "pl-0 sm:pl-6" : ""}>
-                {category.children.map((child) => (
-                  <CategoryBlock
-                    key={child.title}
-                    category={child}
-                    level={level + 1}
-                    openState={openState}
-                    onToggle={onToggle}
-                  />
-                ))}
-              </div>
-            )}
+            {content}
           </motion.div>
         )}
       </AnimatePresence>

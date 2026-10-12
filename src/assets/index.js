@@ -68,6 +68,7 @@ import zeruxdetail from "./zeruxdetail.jpg";
 import vitaldetail from "./vitaldetail.jpg";
 import misionarboldetail from "./misionarboldetail.jpg";
 import pegasusdetail from "./pegasusdetail.jpg";
+import pegasusdetail2 from "./pegasusdetail2.jpg";
 import cryptotrackerdetail from "./cryptotrackerdetail.jpg";
 import offboarding from "./offboarding.png";
 import newuser from "./newuser.png";
@@ -134,6 +135,7 @@ export {
   vitaldetail,
   misionarboldetail,
   pegasusdetail,
+  pegasusdetail2,
   cryptotrackerdetail,
   offboarding,
   newuser,
