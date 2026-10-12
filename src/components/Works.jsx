@@ -28,11 +28,11 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.15 }}
     >
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        tiltMaxAngleX={3}
+        tiltMaxAngleY={3}
+        perspective={1500}
+        scale={1}
+        transitionSpeed={600}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>

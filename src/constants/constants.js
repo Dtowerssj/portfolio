@@ -309,7 +309,7 @@ const webProjects = [
     source_code_link: "https://github.com/Dtowerssj/ML",
   },
   {
-    name: "Trading Pips Factory",
+    name: "Trading Academy Platform",
     description:
       "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. It talks to a Node.js, Express and MongoDB REST API with JWT authentication, published as a separate repository; connecting the course content is still pending.",
     tags: [
@@ -326,6 +326,16 @@ const webProjects = [
       {
         name: "css",
         color: "bg-pink-900",
+      },
+      {
+        name: "nodejs",
+        icon: nodejs,
+        color: "bg-emerald-900",
+      },
+      {
+        name: "mongodb",
+        icon: mongodb,
+        color: "bg-green-900",
       },
     ],
     image: tpf,
@@ -384,57 +394,9 @@ const webProjects = [
 
 const otherProjects = [
   {
-    name: "Car Racer",
+    name: "IPv4 Calculator",
     description:
-      "Endless-runner browser game drawn on an HTML canvas. Jump over the pedestrians to score, with sound effects and background music. Built with no frameworks.",
-    tags: [
-      {
-        name: "JavaScript",
-        icon: javascript,
-        color: "bg-yellow-600",
-      },
-      {
-        name: "html",
-        icon: html,
-        color: "bg-orange-800",
-      },
-      {
-        name: "css",
-        icon: css,
-        color: "bg-blue-800",
-      },
-    ],
-    image: carracer,
-    source_code_link: "https://github.com/Dtowerssj/Car-Racer-Web-Game",
-  },
-  {
-    name: "Game Recommender",
-    documentation: {
-      url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
-      icon: document},
-    description:
-      "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
-    tags: [
-      {
-        name: "mongodb",
-        icon: mongodb,
-        color: "bg-green-900",
-      },
-      {
-        name: "algorithms",
-        color: "bg-purple-900",
-      },
-    ],
-    image: gamerec,
-    source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
-  },
-  {
-    name: "Zoo Management",
-    documentation: {
-      url: "https://github.com/Dtowerssj/Zoo-Management/blob/master/Diagrama%20de%20clases%20Zoo.png",
-      icon: document},
-    description:
-      "Object-oriented Java application for managing a zoo of vertebrates. An abstract animal class is extended by mammals, birds, fish, amphibians and reptiles, with interfaces for movement, attack and defense, and a Swing menu to pick the animal class. Includes the UML class diagram.",
+      "Java Swing desktop app that analyzes an IPv4 address and mask: class (A-E), public or private, APIPA, multicast and reserved ranges, network, gateway and broadcast addresses, and host range. Each calculation is saved to PostgreSQL and can be browsed in a second window.",
     tags: [
       {
         name: "java",
@@ -442,12 +404,13 @@ const otherProjects = [
         color: "bg-red-900",
       },
       {
-        name: "uml",
-        color: "bg-purple-900",
+        name: "postgresql",
+        icon: postgre,
+        color: "bg-blue-900",
       },
     ],
-    image: zoo,
-    source_code_link: "https://github.com/Dtowerssj/Zoo-Management",
+    image: ipcalc,
+    source_code_link: "https://github.com/Dtowerssj/IPv4-IPv6-Calculator",
   },
   {
     name: "Heart Failure Prediction",
@@ -475,9 +438,12 @@ const otherProjects = [
     source_code_link: "https://github.com/Dtowerssj/heart_failure_prediction",
   },
   {
-    name: "IPv4 Calculator",
+    name: "Zoo Management",
+    documentation: {
+      url: "https://github.com/Dtowerssj/Zoo-Management/blob/master/Diagrama%20de%20clases%20Zoo.png",
+      icon: document},
     description:
-      "Java Swing desktop app that analyzes an IPv4 address and mask: class (A-E), public or private, APIPA, multicast and reserved ranges, network, gateway and broadcast addresses, and host range. Each calculation is saved to PostgreSQL and can be browsed in a second window.",
+      "Object-oriented Java application for managing a zoo of vertebrates. An abstract animal class is extended by mammals, birds, fish, amphibians and reptiles, with interfaces for movement, attack and defense, and a Swing menu to pick the animal class. Includes the UML class diagram.",
     tags: [
       {
         name: "java",
@@ -485,16 +451,15 @@ const otherProjects = [
         color: "bg-red-900",
       },
       {
-        name: "postgresql",
-        icon: postgre,
-        color: "bg-blue-900",
+        name: "uml",
+        color: "bg-purple-900",
       },
     ],
-    image: ipcalc,
-    source_code_link: "https://github.com/Dtowerssj/IPv4-IPv6-Calculator",
+    image: zoo,
+    source_code_link: "https://github.com/Dtowerssj/Zoo-Management",
   },
   {
-    name: "Reed UK Job Market Analysis",
+    name: "Job Market Analysis - Technical Test",
     documentation: {
       url: "https://github.com/Dtowerssj/reed_uk_data_analyze/blob/main/TechnicalTestTorre.ipynb",
       icon: document},
@@ -540,6 +505,51 @@ const otherProjects = [
     image: tradingbot,
     source_code_link: "https://github.com/Dtowerssj/flask",
   },
+  {
+    name: "AI Game Recommender",
+    documentation: {
+      url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
+      icon: document},
+    description:
+      "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
+    tags: [
+      {
+        name: "mongodb",
+        icon: mongodb,
+        color: "bg-green-900",
+      },
+      {
+        name: "algorithms",
+        color: "bg-purple-900",
+      },
+    ],
+    image: gamerec,
+    source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
+  },
+  {
+    name: "Car Racer",
+    description:
+      "Endless-runner browser game drawn on an HTML canvas. Jump over the pedestrians to score, with sound effects and background music. Built with no frameworks.",
+    tags: [
+      {
+        name: "JavaScript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+      {
+        name: "html",
+        icon: html,
+        color: "bg-orange-800",
+      },
+      {
+        name: "css",
+        icon: css,
+        color: "bg-blue-800",
+      },
+    ],
+    image: carracer,
+    source_code_link: "https://github.com/Dtowerssj/Car-Racer-Web-Game",
+  },
 ];
 
 const mobileProjects = [
@@ -578,28 +588,6 @@ const mobileProjects = [
     live_icon: googleplay,
   },
   {
-    name: "Vital",
-    description:
-      "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
-    tags: [
-      {
-        name: "React Native",
-        icon: reactjs,
-        color: "bg-blue-900",
-      },
-      {
-        name: "Expo",
-        color: "bg-gray-700",
-      },
-      {
-        name: "Typescript",
-        icon: typescript,
-        color: "bg-blue-800",
-      },
-    ],
-    image: vital,
-  },
-  {
     name: "Misión Árbol",
     description:
       "Mobile app built at Waku Software with React Native, Expo and TypeScript for Misión Árbol, an environmental program of the Venezuelan government. It brings together a digital ID card with a QR code that gives access to the program's benefits, a plant scanner that identifies species and shows the closest matches, a green guide with each plant's family, uses and care, news, a user profile and an AI chat powered by the OpenAI (ChatGPT) API.",
@@ -625,6 +613,28 @@ const mobileProjects = [
       },
     ],
     image: misionarbol,
+  },
+  {
+    name: "Vital",
+    description:
+      "Mobile app built with React Native, Expo and TypeScript at Waku Software to manage medical supply inventories for health centers in Anzoátegui state, Venezuela. Staff sign in and register supply receptions (item, date, warehouse, supplier and purchase order or invoice number) and browse the stock with photos. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "React Native",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "Expo",
+        color: "bg-gray-700",
+      },
+      {
+        name: "Typescript",
+        icon: typescript,
+        color: "bg-blue-800",
+      },
+    ],
+    image: vital,
   },
   {
     name: "Pegasus",
