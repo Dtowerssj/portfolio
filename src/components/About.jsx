@@ -10,7 +10,7 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => {
   return(
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='w-full'>
       <motion.div 
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1, 
             speed: 450
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex
+          className="bg-tertiary rounded-[20px] py-5 px-6 min-h-[280px] flex
           justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title}
@@ -45,14 +45,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in JavaScript & TypeScript, and
-        expertise in frameworks like React, React Native and Node.js. I'm a 
-        quick learner and collaborate closely with clients and companies to 
-        create efficient, scalable and user-friendly solutions that solve 
-        real-world problems.
+        I'm a software developer turned IT leader. At Atlanta Computer Pros, a
+        Microsoft-focused MSP in Atlanta, I lead service delivery for a
+        portfolio of client organizations and build the automation that keeps
+        them running: Azure Functions on the Microsoft Graph API, PowerShell at
+        scale, and AI agents in Copilot Studio and Azure AI Foundry. My
+        background in React, React Native and Node.js means I don't stop at
+        configuration — when the right tool doesn't exist, I build it. I also
+        speak at Microsoft 365 community events about Copilot Studio and AI
+        automation.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} /> 
         ))}

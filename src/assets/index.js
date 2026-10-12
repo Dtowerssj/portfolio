@@ -74,6 +74,14 @@ import offboarding from "./offboarding.png";
 import newuser from "./newuser.png";
 import magicdash from "./magicdash.png";
 import signinmonitor from "./signinmonitor.png";
+import iconAiAgent from "./icon-ai-agent.svg";
+import iconAzureAutomation from "./icon-azure-automation.svg";
+import iconM365Security from "./icon-m365-security.svg";
+import itsupportagent from "./itsupportagent.png";
+import docsassistant from "./docsassistant.png";
+import emailtriage from "./emailtriage.png";
+import aiprojectmanager from "./aiprojectmanager.png";
+import azuremigration from "./azuremigration.png";
 
 export {
   logo,
@@ -141,6 +149,14 @@ export {
   newuser,
   magicdash,
   signinmonitor,
+  iconAiAgent,
+  iconAzureAutomation,
+  iconM365Security,
+  itsupportagent,
+  docsassistant,
+  emailtriage,
+  aiprojectmanager,
+  azuremigration,
   shoestore,
   document,
   websiteicon,

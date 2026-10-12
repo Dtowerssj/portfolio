@@ -63,7 +63,15 @@ import {
   offboarding,
   newuser,
   magicdash,
-  signinmonitor
+  signinmonitor,
+  iconAiAgent,
+  iconAzureAutomation,
+  iconM365Security,
+  itsupportagent,
+  docsassistant,
+  emailtriage,
+  aiprojectmanager,
+  azuremigration
 } from "../assets";
 
 export const navLinks = [
@@ -76,6 +84,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "speaking",
+    title: "Speaking",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -83,16 +95,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "AI Agent Builder",
+    icon: iconAiAgent,
+  },
+  {
+    title: "Azure & Automation",
+    icon: iconAzureAutomation,
+  },
+  {
+    title: "Microsoft 365 & Security",
+    icon: iconM365Security,
+  },
+  {
+    title: "Full-Stack & Mobile Dev",
     icon: web,
-  },
-  {
-    title: "Mobile Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
   },
 ];
 
@@ -181,45 +197,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "FullStack Web Developer",
-    company_name: "Pide un Domi",
-    icon: domi,
-    iconBg: "#383E56",
-    date: "February 2022 - May 2022",
-    points: [
-      "Designing, developing, and maintaining a web application, both front-end and back-end components. Using MERN stack, and other related technologies.",
-      "Collaborating with product managers, and other developers.",
-      "Writing clean, efficient, and well-documented code in languages such as HTML, CSS, JavaScript. And Frameworks like React.js, NodeJS, Express.",
-      "Developing and maintaining a MongoDB database, including designing schemas, optimizing queries, and ensuring data integrity."
-    ],
-  },
-  {
-    title: "IT Technician Manager",
+    title: "IT Technician II → Service Manager",
     company_name: "Atlanta Computer Pros",
     icon: acp,
     iconBg: "#E6DEDD",
     date: "May 2022 - Present",
     points: [
-      "Developing, maintaining, and documenting PowerShell scripts for automation tasks.",
-      "Documenting internal IT procedures for troubleshooting, maintenance, and user support, using Hudu. ",
-      "Troubleshooting hardware and software issues for end-users, remotely, using SyncroMSP.",
-      "Installing, configuring, and maintaining desktops, laptops, servers, printers and peripheral devices.",
-      "Assisting with network infrastructure setup and maintenance, including routers, switches, and firewalls.",
-      "Managing and maintaining Active Directory and 365 accounts. ",
-      "Training and mentoring junior IT staff."
-    ],
-  },
-  {
-    title: "FullStack Web Developer",
-    company_name: "Addin Technologies",
-    icon: addin,
-    iconBg: "#FFF",
-    date: "Jan 2023 - April 2023",
-    points: [
-      "Developing and maintaining web applications using React.js, Node.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Lead the service desk for a portfolio of 11 client organizations on Microsoft 365, moving from technician to service management.",
+      "Built serverless automation on Azure Functions (Node.js, Microsoft Graph): a multi-tenant sign-in risk monitor with tiered alerting, a ticket intake hub for SyncroMSP, and a hardware request workflow.",
+      "Built an IT support AI agent in Copilot Studio, integrated with SyncroMSP and Hudu through MCP.",
+      "Drive multi-tenant security hardening: Intune/Defender Secure Score improvements, CIS baselines deployed via Nerdio, SPF/DKIM/DMARC remediation across 8+ domains after a phishing campaign, and an AV migration to Defender for Business.",
+      "Migrated a client's Django application to Azure (App Service, MySQL Flexible Server, Key Vault, Managed Identity, GitHub Actions CI/CD); currently leading a full CRM rebuild on React, Node.js and PostgreSQL as sole developer.",
+      "Audited network infrastructure across all client sites and centralized logging to Azure; deploy PowerShell automation fleet-wide through Syncro RMM.",
     ],
   },
   {
@@ -234,6 +223,83 @@ const experiences = [
       "Proficiently addressed and resolved software bugs to ensure optimal application performance.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products"
     ],
+  },
+  {
+    title: "FullStack Web Developer",
+    company_name: "Addin Technologies",
+    icon: addin,
+    iconBg: "#FFF",
+    date: "Jan 2023 - April 2023",
+    points: [
+      "Built and maintained web applications with React.js and Node.js, with responsive, cross-browser interfaces.",
+      "Worked with designers and product managers, and took part in code reviews.",
+    ],
+  },
+  {
+    title: "FullStack Web Developer",
+    company_name: "Pide un Domi",
+    icon: domi,
+    iconBg: "#383E56",
+    date: "February 2022 - May 2022",
+    points: [
+      "Built front-end and back-end features for the company's web application on the MERN stack (MongoDB, Express, React, Node.js).",
+      "Designed MongoDB schemas and optimized queries, working closely with product managers.",
+    ],
+  },
+];
+
+// Talks and community sessions, newest first. `link` is optional: when it is set the card shows a
+// "View session" link.
+const talks = [
+  {
+    title: "Serverless IT Operations: Building Smart Automation with Azure Functions",
+    event: "M365 Community Days Atlanta 2026",
+    location: "Atlanta, GA",
+    date: "November 14, 2026",
+    language: "English",
+    format: "Session",
+    status: "upcoming",
+    description: "How a small MSP runs IT operations on serverless code: Azure Functions in Node.js on top of Microsoft Graph that turn a two-hour manual user onboarding into a two-minute automated one, monitor sign-in risk across multiple tenants, and route support tickets automatically.",
+  },
+  {
+    title: "Building an Autonomous AI Project Manager: Proactive Intelligence with Copilot Studio",
+    event: "Nashville Microsoft Community Day 2026",
+    location: "Nashville, TN",
+    date: "September 11, 2026",
+    language: "English",
+    format: "Session",
+    status: "delivered",
+    description: "Live build of a Copilot Studio agent that works as a project manager on its own: it reads Microsoft Planner, detects overdue and at-risk tasks, flags overloaded team members and posts proactive updates to Microsoft Teams, grounded on the project brief.",
+  },
+  {
+    title: "Building an Autonomous AI Project Manager: Proactive Intelligence with Copilot Studio",
+    event: "Memphis Microsoft Community Days 2026",
+    location: "Memphis, TN",
+    date: "June 5, 2026",
+    language: "English",
+    format: "Session",
+    status: "delivered",
+    description: "First English edition of the session: an autonomous agent built live in Copilot Studio with Power Automate agent flows, Planner and Teams, showing why proactive agents deliver more value than chatbots.",
+  },
+  {
+    title: "Elabora un Project Manager Autónomo con IA: Inteligencia Proactiva con Copilot Studio",
+    event: "M365 Miami 2026",
+    location: "Miami, FL",
+    date: "February 6, 2026",
+    language: "Español",
+    format: "Session",
+    status: "delivered",
+    description: "My first community session, delivered in Spanish: building an autonomous AI project manager with Copilot Studio, Power Automate and Microsoft Planner, almost entirely as a live demo.",
+  },
+  {
+    title: "Responsible AI",
+    event: "Atlanta CIO & CISO Strategy Meeting",
+    location: "Atlanta, GA",
+    date: "October 28, 2025",
+    language: "English",
+    format: "Roundtable facilitation",
+    status: "delivered",
+    description: "Facilitated a peer discussion with CIOs and CISOs on governing AI in the enterprise: AI usage policies and transparency, frameworks like the NIST AI RMF, balancing innovation with ethics, and new security risks such as shadow AI and prompt injection.",
   },
 ];
 
@@ -692,8 +758,160 @@ const mobileProjects = [
   // },
 ];
 
+// Private company work in the cloud category.
+const cloudProjects = [
+  {
+    name: "Secure Azure Migration for a Django App",
+    year: "2026",
+    description:
+      "Moved a law firm's internal project management app from a laptop-hosted setup to production on Azure, designed around security from the start. The Django app runs as a container on Azure App Service with Azure Database for MySQL Flexible Server. Every secret lives in Azure Key Vault and reaches the app through Key Vault references and a system-assigned Managed Identity with read-only secret access, so no credentials sit in the code or in plain-text settings. Deployments run through GitHub Actions CI/CD. I migrated the production data, resolved conflicting Django migration histories, and set up least-privilege access for the client's developers: Reader access in Azure, read-only database users, and time-limited Contributor access when they needed it.",
+    tags: [
+      {
+        name: "Azure App Service",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Azure Key Vault",
+        color: "bg-yellow-900",
+      },
+      {
+        name: "Managed Identity",
+        color: "bg-teal-900",
+      },
+      {
+        name: "MySQL Flexible Server",
+        color: "bg-orange-900",
+      },
+      {
+        name: "GitHub Actions",
+        color: "bg-slate-700",
+      },
+      {
+        name: "Docker",
+        icon: docker,
+        color: "bg-blue-800",
+      },
+    ],
+    image: azuremigration,
+  },
+];
+
 // Categories without projects are not rendered, so aiProjects can stay empty until it is filled.
 const aiProjects = [
+  {
+    name: "IT Support Agent",
+    year: "2026",
+    description:
+      "AI agent built in Copilot Studio for the technicians of a Microsoft-focused MSP, used daily across the service desk. It answers questions about clients, tickets, assets and internal procedures by calling Hudu through its MCP server (OAuth 2.0), SyncroMSP through a custom connector I built from a rebuilt OpenAPI 2.0 spec, and SharePoint knowledge sources, all under generative orchestration. It started as a two-agent design with a SharePoint knowledge base, chosen over Azure AI Search to avoid a $300+ monthly cost, and evolved into a single agent calling its tools directly. Internal company tool, so the code is not public.",
+    tags: [
+      {
+        name: "Copilot Studio",
+        color: "bg-purple-900",
+      },
+      {
+        name: "MCP",
+        color: "bg-slate-700",
+      },
+      {
+        name: "Power Platform",
+        color: "bg-fuchsia-900",
+      },
+      {
+        name: "OpenAPI",
+        color: "bg-green-900",
+      },
+      {
+        name: "SharePoint",
+        color: "bg-sky-900",
+      },
+    ],
+    image: itsupportagent,
+  },
+  {
+    name: "Scripting Documentation Assistant",
+    year: "2026",
+    description:
+      "Copilot Studio agent that documents automation code on its own. You paste or upload a PowerShell script or an Azure Function and it infers the script type, trigger and scope, writes a standardized header, creates the knowledge base article in Hudu through MCP, commits the file to GitHub through the GitHub MCP server and saves a copy to SharePoint, checking for existing articles and files first to avoid duplicates. The only human step is approving the file name. Used regularly by the team and saves a lot of documentation time. Internal company tool, so the code is not public.",
+    tags: [
+      {
+        name: "Copilot Studio",
+        color: "bg-purple-900",
+      },
+      {
+        name: "MCP",
+        color: "bg-slate-700",
+      },
+      {
+        name: "GitHub",
+        color: "bg-slate-700",
+      },
+      {
+        name: "Hudu",
+        icon: hudu,
+        color: "bg-slate-700",
+      },
+      {
+        name: "SharePoint",
+        color: "bg-sky-900",
+      },
+    ],
+    image: docsassistant,
+  },
+  {
+    name: "Support Email Triage",
+    year: "2026",
+    description:
+      "Automated triage for the support inbox of an MSP, running in production. When a ticket is created from an incoming email, a Power Automate flow sends it to an AI Builder prompt that classifies it, and the result is written back to the ticket in SyncroMSP. It began as a Copilot Studio agent with Teams Adaptive Cards and ended as a pure Power Automate + AI Builder pipeline: a batch process with no conversation doesn't need an agent, and dropping it made the flow simpler and cheaper. Internal company tool, so the code is not public.",
+    tags: [
+      {
+        name: "Power Automate",
+        color: "bg-blue-900",
+      },
+      {
+        name: "AI Builder",
+        color: "bg-violet-900",
+      },
+      {
+        name: "SyncroMSP",
+        color: "bg-orange-900",
+      },
+      {
+        name: "Webhooks",
+        color: "bg-gray-700",
+      },
+    ],
+    image: emailtriage,
+  },
+  {
+    name: "Autonomous AI Project Manager",
+    year: "2026",
+    description:
+      "Autonomous agent in Copilot Studio that works as a project manager without being asked: it reads Microsoft Planner on a schedule, flags overdue and at-risk tasks, detects overloaded team members, celebrates completed work and posts updates to the project's Microsoft Teams channel, including @team mentions through Microsoft Graph, which the native connector doesn't support. Used on real company projects, and the live demo of my talks at M365 Miami, Memphis and Nashville Community Days.",
+    tags: [
+      {
+        name: "Copilot Studio",
+        color: "bg-purple-900",
+      },
+      {
+        name: "Power Automate",
+        color: "bg-blue-900",
+      },
+      {
+        name: "Microsoft Planner",
+        color: "bg-emerald-900",
+      },
+      {
+        name: "Microsoft Teams",
+        color: "bg-indigo-900",
+      },
+      {
+        name: "Microsoft Graph",
+        icon: microsoft365,
+        color: "bg-indigo-900",
+      },
+    ],
+    image: aiprojectmanager,
+  },
   {
     name: "Employee Offboarding Orchestrator",
     year: "2025 - 2026",
@@ -861,6 +1079,7 @@ const aiProjects = [
 // categories. `defaultOpen` is only the initial state; `collapsible: false` makes a plain heading.
 const projectCategories = [
   { title: "AI and Automation", defaultOpen: true, projects: aiProjects },
+  { title: "Cloud & Infrastructure", defaultOpen: true, projects: cloudProjects },
   {
     title: "Software Development",
     collapsible: false,
@@ -872,4 +1091,4 @@ const projectCategories = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projectCategories };
+export { services, technologies, experiences, talks, testimonials, projectCategories };
