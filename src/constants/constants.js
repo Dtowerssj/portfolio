@@ -491,51 +491,6 @@ const otherProjects = [
     source_code_link: "https://github.com/Dtowerssj/reed_uk_data_analyze",
   },
   {
-    name: "TradingView to MT5 Bot",
-    year: "2022",
-    description:
-      "Python bot that receives TradingView webhook alerts and executes them on MetaTrader 5: opens BUY and SELL orders with stop loss and take profit, closes positions and moves stops, sizing each trade by a configurable percentage of account risk. Includes a Tkinter control panel.",
-    tags: [
-      {
-        name: "Python",
-        icon: python,
-        color: "bg-sky-800",
-      },
-      {
-        name: "Flask",
-        color: "bg-gray-700",
-      },
-      {
-        name: "MetaTrader 5",
-        color: "bg-amber-800",
-      },
-    ],
-    image: tradingbot,
-    source_code_link: "https://github.com/Dtowerssj/flask",
-  },
-  {
-    name: "AI Game Recommender",
-    year: "2021",
-    documentation: {
-      url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
-      icon: document},
-    description:
-      "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
-    tags: [
-      {
-        name: "MongoDB",
-        icon: mongodb,
-        color: "bg-green-900",
-      },
-      {
-        name: "Algorithms",
-        color: "bg-purple-900",
-      },
-    ],
-    image: gamerec,
-    source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
-  },
-  {
     name: "Car Racer",
     year: "2021",
     description:
@@ -719,7 +674,53 @@ const mobileProjects = [
 ];
 
 // Categories without projects are not rendered, so aiProjects can stay empty until it is filled.
-const aiProjects = [];
+const aiProjects = [
+  {
+    name: "AI Game Recommender",
+    year: "2021",
+    documentation: {
+      url: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA/blob/main/Proyecto_Final_Algoritmo_de_recomendacin_de_Videojuegos.pdf",
+      icon: document},
+    description:
+      "Team design project for a university course: a supervised recommendation algorithm that profiles players with yes/no questions, suggests a video game, and stores user picks in MongoDB to improve future results. Includes the flowchart, database schema and written report.",
+    tags: [
+      {
+        name: "MongoDB",
+        icon: mongodb,
+        color: "bg-green-900",
+      },
+      {
+        name: "Algorithms",
+        color: "bg-purple-900",
+      },
+    ],
+    image: gamerec,
+    source_code_link: "https://github.com/Dtowerssj/Algoritmo-Videojuegos-IA",
+  },
+  {
+    name: "TradingView to MT5 Bot",
+    year: "2022",
+    description:
+      "Python bot that receives TradingView webhook alerts and executes them on MetaTrader 5: opens BUY and SELL orders with stop loss and take profit, closes positions and moves stops, sizing each trade by a configurable percentage of account risk. Includes a Tkinter control panel.",
+    tags: [
+      {
+        name: "Python",
+        icon: python,
+        color: "bg-sky-800",
+      },
+      {
+        name: "Flask",
+        color: "bg-gray-700",
+      },
+      {
+        name: "MetaTrader 5",
+        color: "bg-amber-800",
+      },
+    ],
+    image: tradingbot,
+    source_code_link: "https://github.com/Dtowerssj/flask",
+  },
+];
 
 const projectCategories = [
   { title: "Mobile", projects: mobileProjects },
