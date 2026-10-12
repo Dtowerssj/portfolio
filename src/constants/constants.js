@@ -48,7 +48,8 @@ import {
   vital,
   misionarbol,
   zerux,
-  pegasus
+  pegasus,
+  tpf
 } from "../assets";
 
 export const navLinks = [
@@ -306,6 +307,30 @@ const webProjects = [
     ],
     image: mlclone,
     source_code_link: "https://github.com/Dtowerssj/ML",
+  },
+  {
+    name: "Trading Pips Factory",
+    description:
+      "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. The REST API it was written against is not part of the repository, so authentication and the course content are not finished.",
+    tags: [
+      {
+        name: "JavaScript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+      {
+        name: "react",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "css",
+        color: "bg-pink-900",
+      },
+    ],
+    image: tpf,
+    source_code_link: "https://github.com/Dtowerssj/tpf-web",
+    live_url: "https://tpf-web.vercel.app/",
   },
   // Template cards hidden for now (not real projects):
   //   {

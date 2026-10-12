@@ -59,6 +59,7 @@ import vital from "./vital.jpg";
 import misionarbol from "./misionarbol.jpg";
 import zerux from "./zerux.jpg";
 import pegasus from "./pegasus.jpg";
+import tpf from "./tpf.jpg";
 
 export {
   logo,
@@ -111,6 +112,7 @@ export {
   misionarbol,
   zerux,
   pegasus,
+  tpf,
   shoestore,
   document,
   websiteicon,
