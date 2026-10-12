@@ -45,7 +45,8 @@ import {
   tradingbot,
   vital,
   misionarbol,
-  zerux
+  zerux,
+  pegasus
 } from "../assets";
 
 export const navLinks = [
@@ -590,6 +591,29 @@ const mobileProjects = [
       },
     ],
     image: misionarbol,
+  },
+  {
+    name: "Pegasus",
+    description:
+      "Uber Eats-style food delivery app built with React Native and Expo for a university mobile development course, together with a classmate. Users sign in and browse the available restaurants; establishments register and manage their own product catalog (create, edit and delete). It talks to a Node.js, Express and PostgreSQL REST API. The original backend is offline, so the screenshots use sample data.",
+    tags: [
+      {
+        name: "react native",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "expo",
+        color: "bg-gray-700",
+      },
+      {
+        name: "javascript",
+        icon: javascript,
+        color: "bg-yellow-600",
+      },
+    ],
+    image: pegasus,
+    source_code_link: "https://github.com/Dtowerssj/pegasus-app",
   },
   {
     name: "Crypto Tracker",

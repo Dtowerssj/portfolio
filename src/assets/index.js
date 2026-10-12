@@ -56,6 +56,7 @@ import tradingbot from "./tradingbot.png";
 import vital from "./vital.jpg";
 import misionarbol from "./misionarbol.jpg";
 import zerux from "./zerux.jpg";
+import pegasus from "./pegasus.jpg";
 
 export {
   logo,
@@ -105,6 +106,7 @@ export {
   vital,
   misionarbol,
   zerux,
+  pegasus,
   shoestore,
   document,
   websiteicon,
