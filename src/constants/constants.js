@@ -8,6 +8,7 @@ import {
   python,
   kotlin,
   openai,
+  googleplay,
   java,
   android,
   html,
@@ -549,6 +550,7 @@ const mobileProjects = [
     ],
     image: zerux,
     live_url: "https://play.google.com/store/apps/details?id=com.dtowerssj.nevula_mobile",
+    live_icon: googleplay,
   },
   {
     name: "Vital",
