@@ -7,6 +7,7 @@ import {
   typescript,
   python,
   kotlin,
+  openai,
   java,
   android,
   html,
@@ -538,7 +539,13 @@ const mobileProjects = [
         color: "bg-blue-800",
       },
       {
+        name: "kotlin",
+        icon: kotlin,
+        color: "bg-purple-900",
+      },
+      {
         name: "openai api",
+        icon: openai,
         color: "bg-emerald-900",
       },
     ],
@@ -588,6 +595,7 @@ const mobileProjects = [
       },
       {
         name: "openai api",
+        icon: openai,
         color: "bg-emerald-900",
       },
     ],
