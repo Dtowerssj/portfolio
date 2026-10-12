@@ -311,7 +311,7 @@ const webProjects = [
   {
     name: "Trading Pips Factory",
     description:
-      "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. The REST API it was written against is not part of the repository, so authentication and the course content are not finished.",
+      "Front end of an online trading academy, built with React in 2022 and still a work in progress. It has a landing page with the academy's offer, sign-in and sign-up forms with client-side validation, and a members area with a collapsible side menu and a list of course chapters. It talks to a Node.js, Express and MongoDB REST API with JWT authentication, published as a separate repository; connecting the course content is still pending.",
     tags: [
       {
         name: "JavaScript",
