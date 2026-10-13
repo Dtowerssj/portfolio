@@ -71,7 +71,8 @@ import {
   docsassistant,
   emailtriage,
   aiprojectmanager,
-  azuremigration
+  azuremigration,
+  acpscripts
 } from "../assets";
 
 export const navLinks = [
@@ -911,6 +912,40 @@ const aiProjects = [
       },
     ],
     image: aiprojectmanager,
+  },
+  {
+    name: "Automation Hub for Microsoft Teams",
+    year: "2025 - 2026",
+    description:
+      "Microsoft Teams app that gives the technicians of a managed services provider one place to run the company's automations from a form instead of running scripts by hand. It is a Teams personal tab built with React, Fluent UI and the Teams SDK, signed in with Microsoft Entra ID single sign-on and hosted on Azure Static Web Apps, provisioned with Teams Toolkit and Bicep. It has guided forms to onboard a new user, off-board an employee (company and user pickers, matching with the ticketing and documentation platforms, security, mailbox and OneDrive options, with live progress while the workflow runs), request a new workstation and clean up unlicensed users, and it calls the Azure Functions in Node.js and PowerShell that do the work. Private company project, so the code is not public.",
+    tags: [
+      {
+        name: "React",
+        icon: reactjs,
+        color: "bg-blue-900",
+      },
+      {
+        name: "Microsoft Teams",
+        color: "bg-indigo-900",
+      },
+      {
+        name: "Fluent UI",
+        color: "bg-sky-900",
+      },
+      {
+        name: "Entra ID",
+        color: "bg-blue-800",
+      },
+      {
+        name: "Azure Static Web Apps",
+        color: "bg-cyan-900",
+      },
+      {
+        name: "Bicep",
+        color: "bg-slate-700",
+      },
+    ],
+    image: acpscripts,
   },
   {
     name: "Employee Offboarding Orchestrator",

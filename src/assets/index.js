@@ -82,6 +82,7 @@ import docsassistant from "./docsassistant.png";
 import emailtriage from "./emailtriage.png";
 import aiprojectmanager from "./aiprojectmanager.png";
 import azuremigration from "./azuremigration.png";
+import acpscripts from "./acpscripts.png";
 
 export {
   logo,
@@ -157,6 +158,7 @@ export {
   emailtriage,
   aiprojectmanager,
   azuremigration,
+  acpscripts,
   shoestore,
   document,
   websiteicon,
