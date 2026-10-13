@@ -1,6 +1,6 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import {motion} from 'framer-motion'
+import {motion} from 'motion/react'
 
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -20,7 +20,7 @@ const ExperienceCard = ({ experience }) => (
     icon={
       <div className='flex justify-center items-center w-full h-full'>
         <img src={experience.icon} alt={experience.company_name}
-        className="w-[60%} h-[60%] object-contain rounded " />
+        className="w-[60%} h-[60%] object-contain rounded-sm " />
       </div>
     }
   >

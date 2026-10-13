@@ -15,6 +15,12 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import python from "./tech/python.png";
 import kotlin from "./tech/kotlin.png";
+import openai from "./tech/openai.svg";
+import powershell from "./tech/powershell.svg";
+import azurefunctions from "./tech/azurefunctions.svg";
+import microsoft365 from "./tech/microsoft365.svg";
+import hudu from "./tech/hudu.png";
+import googleplay from "./tech/googleplay.svg";
 import java from "./tech/java.png";
 import android from "./tech/android.png";
 import mongodb from "./tech/mongodb.png";
@@ -44,6 +50,38 @@ import shoestore from "./shoestore.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import carracer from "./carracer.png";
+import gamerec from "./gamerec.png";
+import cryptotracker from "./cryptotracker.jpg";
+import zoo from "./zoo.png";
+import heartfailure from "./heartfailure.png";
+import ipcalc from "./ipcalc.png";
+import mlclone from "./mlclone.jpg";
+import reeduk from "./reeduk.png";
+import tradingbot from "./tradingbot.png";
+import vital from "./vital.jpg";
+import misionarbol from "./misionarbol.jpg";
+import zerux from "./zerux.jpg";
+import pegasus from "./pegasus.jpg";
+import tpf from "./tpf.jpg";
+import zeruxdetail from "./zeruxdetail.jpg";
+import vitaldetail from "./vitaldetail.jpg";
+import misionarboldetail from "./misionarboldetail.jpg";
+import pegasusdetail from "./pegasusdetail.jpg";
+import pegasusdetail2 from "./pegasusdetail2.jpg";
+import cryptotrackerdetail from "./cryptotrackerdetail.jpg";
+import offboarding from "./offboarding.png";
+import newuser from "./newuser.png";
+import magicdash from "./magicdash.png";
+import signinmonitor from "./signinmonitor.png";
+import iconAiAgent from "./icon-ai-agent.svg";
+import iconAzureAutomation from "./icon-azure-automation.svg";
+import iconM365Security from "./icon-m365-security.svg";
+import itsupportagent from "./itsupportagent.png";
+import docsassistant from "./docsassistant.png";
+import emailtriage from "./emailtriage.png";
+import aiprojectmanager from "./aiprojectmanager.png";
+import azuremigration from "./azuremigration.png";
 
 export {
   logo,
@@ -62,6 +100,12 @@ export {
   javascript,
   python,
   kotlin,
+  openai,
+  powershell,
+  azurefunctions,
+  microsoft365,
+  hudu,
+  googleplay,
   java,
   android,
   mongodb,
@@ -81,6 +125,38 @@ export {
   carrent,
   jobit,
   tripguide,
+  carracer,
+  gamerec,
+  cryptotracker,
+  zoo,
+  heartfailure,
+  ipcalc,
+  mlclone,
+  reeduk,
+  tradingbot,
+  vital,
+  misionarbol,
+  zerux,
+  pegasus,
+  tpf,
+  zeruxdetail,
+  vitaldetail,
+  misionarboldetail,
+  pegasusdetail,
+  pegasusdetail2,
+  cryptotrackerdetail,
+  offboarding,
+  newuser,
+  magicdash,
+  signinmonitor,
+  iconAiAgent,
+  iconAzureAutomation,
+  iconM365Security,
+  itsupportagent,
+  docsassistant,
+  emailtriage,
+  aiprojectmanager,
+  azuremigration,
   shoestore,
   document,
   websiteicon,

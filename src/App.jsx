@@ -1,5 +1,5 @@
 import {BrowserRouter} from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
+import { About, Contact, Experience, Speaking, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
@@ -14,9 +14,11 @@ const App = () => {
         </div>
         <About />
         <Experience /> 
+        <Speaking />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* Testimonials hidden for now (the data lives in constants.js). To show them again, uncomment: */}
+        {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

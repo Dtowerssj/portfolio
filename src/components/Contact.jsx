@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
@@ -110,7 +110,7 @@ return (
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold
+            className='bg-tertiary py-3 px-8 outline-hidden w-fit text-white font-bold
             shadow-md shadow-primary rounded-xl'
           >
             {loading ? 'Sending...' : 'Send'}

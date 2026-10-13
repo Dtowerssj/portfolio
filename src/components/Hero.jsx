@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import {motion} from 'motion/react'
 
 import {styles} from '../styles'
 import {ComputersCanvas} from './canvas'
@@ -19,8 +19,11 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className='text-[#915eff]'>Diego</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I am a Software Developer
+            <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-[22ch] xs:max-w-none`}>
+              Microsoft 365 &amp; AI Automation Engineer
+            </p>
+            <p className='mt-3 text-secondary lg:text-[18px] sm:text-[16px] text-[13px] leading-[1.5] max-w-[34ch] sm:max-w-none'>
+              Service Manager @ Atlanta Computer Pros · Speaker · Developer at heart
             </p>
           </div>
 
