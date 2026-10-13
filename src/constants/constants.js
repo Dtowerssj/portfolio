@@ -206,6 +206,7 @@ const experiences = [
     points: [
       "Lead the service desk for a portfolio of 11 client organizations on Microsoft 365, moving from technician to service management.",
       "Built serverless automation on Azure Functions (Node.js, Microsoft Graph): a multi-tenant sign-in risk monitor with tiered alerting, a ticket intake hub for SyncroMSP, and a hardware request workflow.",
+      "Built a Microsoft Teams app (React, Fluent UI, Entra ID single sign-on) that gives technicians guided forms for user onboarding, offboarding and device requests, backed by the Azure Functions.",
       "Built an IT support AI agent in Copilot Studio, integrated with SyncroMSP and Hudu through MCP.",
       "Drive multi-tenant security hardening: Intune/Defender Secure Score improvements, CIS baselines deployed via Nerdio, SPF/DKIM/DMARC remediation across 8+ domains after a phishing campaign, and an AV migration to Defender for Business.",
       "Migrated a client's Django application to Azure (App Service, MySQL Flexible Server, Key Vault, Managed Identity, GitHub Actions CI/CD); currently leading a full CRM rebuild on React, Node.js and PostgreSQL as sole developer.",
